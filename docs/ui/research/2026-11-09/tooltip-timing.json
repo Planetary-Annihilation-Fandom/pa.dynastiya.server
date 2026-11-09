@@ -1,0 +1,126 @@
+[
+  {
+    "event": "show",
+    "time": 382180.9990000038,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "shown",
+    "time": 382187.0960000015,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "mouseenter",
+    "time": 382187.25500000437,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "detached",
+    "time": 382187.6370000027
+  },
+  {
+    "event": "mouseleave",
+    "time": 382601.92200000165,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "hide",
+    "time": 382703.65799999854,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "hidden",
+    "time": 382704.101000003,
+    "opacity": "0",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "detached",
+    "time": 382856.77600000054
+  },
+  {
+    "event": "show",
+    "time": 383019.4130000018,
+    "opacity": "",
+    "transition": ""
+  },
+  {
+    "event": "shown",
+    "time": 383022.1410000013,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "mouseenter",
+    "time": 383022.27100000164,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "mouseleave",
+    "time": 383437.75900000037,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "hide",
+    "time": 383539.4589999996,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "hidden",
+    "time": 383540.10299999936,
+    "opacity": "0",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "detached",
+    "time": 383691.77299999865
+  },
+  {
+    "event": "show",
+    "time": 383852.52700000274,
+    "opacity": "",
+    "transition": ""
+  },
+  {
+    "event": "shown",
+    "time": 383854.93100000167,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "mouseenter",
+    "time": 383855.0299999988,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "mouseleave",
+    "time": 384270.36200000293,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "hide",
+    "time": 384372.9620000013,
+    "opacity": "1",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "hidden",
+    "time": 384373.23299999844,
+    "opacity": "0",
+    "transition": "none 0s ease 0s"
+  },
+  {
+    "event": "detached",
+    "time": 384524.72999999736
+  }
+]

@@ -6,3 +6,5 @@ Development is split across two repositories so server and client code and asset
 
 - [pa.dynastiya.server](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server) contains the server-side part of the mod.
 - [pa.dynastiya.client](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client) contains the client-side part of the mod.
+
+Общие решения и план переработки UI: [документация](docs/README.md). Выполненные оптимизации учитываются в [журнале интерфейса](docs/ui/changes.md).
