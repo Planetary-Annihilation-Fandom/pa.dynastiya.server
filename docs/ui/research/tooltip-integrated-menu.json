@@ -1,0 +1,46 @@
+{
+  "target": "game/start/",
+  "results": [
+    {
+      "mode": "integrated",
+      "events": [
+        {
+          "event": "show",
+          "time": 8577.162000001408
+        },
+        {
+          "event": "shown",
+          "time": 8582.80100000411
+        },
+        {
+          "event": "hide",
+          "time": 8634.589000001142
+        },
+        {
+          "event": "hidden",
+          "time": 8635.062000001199
+        },
+        {
+          "event": "detached",
+          "time": 8635.351000004448
+        }
+      ],
+      "enter": 8576.07999999891,
+      "leave": 8634.087999998883,
+      "focusRetained": true,
+      "blurHidden": true,
+      "tipsAfterRapid": 0,
+      "dynamicTitle": "Updated",
+      "options": {
+        "delay": {
+          "show": 0,
+          "hide": 0
+        },
+        "animation": false,
+        "container": "body"
+      },
+      "removedWithOwner": true,
+      "instanceRemoved": true
+    }
+  ]
+}

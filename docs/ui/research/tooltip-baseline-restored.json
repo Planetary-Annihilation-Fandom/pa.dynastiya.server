@@ -1,0 +1,46 @@
+{
+  "target": "new_game/new_game.html",
+  "results": [
+    {
+      "mode": "baseline",
+      "events": [
+        {
+          "event": "show",
+          "time": 12080.894999999146
+        },
+        {
+          "event": "shown",
+          "time": 12084.367000003112
+        },
+        {
+          "event": "hide",
+          "time": 12268.619000002218
+        },
+        {
+          "event": "hidden",
+          "time": 12269.12099999754
+        },
+        {
+          "event": "detached",
+          "time": 12422.889000001305
+        }
+      ],
+      "enter": 12079.874000002746,
+      "leave": 12166.24099999899,
+      "focusRetained": true,
+      "blurHidden": false,
+      "tipsAfterRapid": 2,
+      "dynamicTitle": "Updated",
+      "options": {
+        "delay": {
+          "show": 0,
+          "hide": 100
+        },
+        "animation": "fadeIn",
+        "container": "body"
+      },
+      "removedWithOwner": false,
+      "instanceRemoved": true
+    }
+  ]
+}

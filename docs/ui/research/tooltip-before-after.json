@@ -1,0 +1,87 @@
+{
+  "target": "new_game/new_game.html",
+  "results": [
+    {
+      "mode": "baseline",
+      "events": [
+        {
+          "event": "show",
+          "time": 6128.145000002405
+        },
+        {
+          "event": "shown",
+          "time": 6131.982999999309
+        },
+        {
+          "event": "hide",
+          "time": 6296.410000002652
+        },
+        {
+          "event": "hidden",
+          "time": 6297.12400000426
+        },
+        {
+          "event": "detached",
+          "time": 6449.5870000027935
+        }
+      ],
+      "enter": 6127.220000002126,
+      "leave": 6195.292000003974,
+      "focusRetained": true,
+      "blurHidden": false,
+      "tipsAfterRapid": 2,
+      "dynamicTitle": "Updated",
+      "options": {
+        "delay": {
+          "show": 0,
+          "hide": 100
+        },
+        "animation": "fadeIn",
+        "container": "body"
+      },
+      "removedWithOwner": false,
+      "instanceRemoved": true
+    },
+    {
+      "mode": "patched",
+      "events": [
+        {
+          "event": "show",
+          "time": 6643.255000002682
+        },
+        {
+          "event": "shown",
+          "time": 6644.535999999789
+        },
+        {
+          "event": "hide",
+          "time": 6701.168999999936
+        },
+        {
+          "event": "hidden",
+          "time": 6701.358000005712
+        },
+        {
+          "event": "detached",
+          "time": 6701.58100000117
+        }
+      ],
+      "enter": 6642.635000003793,
+      "leave": 6700.989000004483,
+      "focusRetained": true,
+      "blurHidden": true,
+      "tipsAfterRapid": 0,
+      "dynamicTitle": "Updated",
+      "options": {
+        "delay": {
+          "show": 0,
+          "hide": 0
+        },
+        "animation": false,
+        "container": "body"
+      },
+      "removedWithOwner": true,
+      "instanceRemoved": true
+    }
+  ]
+}

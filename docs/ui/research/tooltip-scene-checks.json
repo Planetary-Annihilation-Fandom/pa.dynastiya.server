@@ -1,0 +1,17 @@
+{
+  "lobby": {
+    "system": "Disparity",
+    "planets": 1,
+    "patch": true,
+    "options": { "animation": false, "delay": { "show": 0, "hide": 0 } },
+    "holodecks": 1,
+    "shown": true,
+    "detached": true
+  },
+  "pagehideHandler": {
+    "method": "jQuery(window).triggerHandler('pagehide.dynastiyaTooltip') in settings; scene reloaded afterwards",
+    "shown": true,
+    "detached": true,
+    "instanceRemoved": true
+  }
+}
