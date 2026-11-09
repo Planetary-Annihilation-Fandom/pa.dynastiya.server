@@ -1,0 +1,203 @@
+{
+  "setup": {
+    "x": 156.3984375,
+    "y": 681,
+    "url": "coui://ui/main/game/settings/settings.html",
+    "size": [
+      16,
+      16
+    ],
+    "scale": 1
+  },
+  "selector": ".btn_std",
+  "results": [
+    {
+      "mode": "baseline",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "leave": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "settled": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      }
+    },
+    {
+      "mode": "patched",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "leave": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "settled": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      }
+    },
+    {
+      "mode": "baseline-restored",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "leave": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "settled": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "all",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      }
+    },
+    {
+      "mode": "patched-final",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "leave": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      },
+      "settled": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "btn_std",
+        "focused": false,
+        "hit": false
+      }
+    }
+  ]
+}

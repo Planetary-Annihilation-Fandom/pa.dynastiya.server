@@ -1,0 +1,689 @@
+{
+  "root": "C:/workroot/software/steam/steamapps/common/Planetary Annihilation Titans/media/ui/main",
+  "rows": [
+    {
+      "file": "game/armory/adyen/css/screen.css",
+      "selector": "#paymentMethods li",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/armory/adyen/css/screen.css",
+      "selector": "#paymentMethods li:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/armory/adyen/css/screen.css",
+      "selector": ".btn_std_ix",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/armory/adyen/css/screen.css",
+      "selector": ".btn_std_ix:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/armory/armory.css",
+      "selector": ".one-commander",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/armory/armory.css",
+      "selector": ".one-commander:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".gw_coop_prompt_button",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".div_game_menu_item",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".div_game_menu_item:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": "#gw-campaign-chat",
+      "transitions": [
+        "transition: border-color 200ms linear, box-shadow 200ms linear"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".gw-panel-collapse-button.top",
+      "transitions": [
+        "transition: background-color 200ms linear, border-color 200ms linear, box-shadow 200ms linear"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".btn_toggle",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".btn_toggle:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".btn_toggle:active, .btn_toggle.live",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_play/gw_play.css",
+      "selector": ".btn_slot:hover",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_start/gw_start.css",
+      "selector": "#start-cards > .card, .loadout-card > .card",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_start/gw_start.css",
+      "selector": "#start-cards > .card:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_start/gw_start.css",
+      "selector": ".one_war",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/galactic_war/gw_start/gw_start.css",
+      "selector": ".one_war:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/gamestats/gamestats.css",
+      "selector": ".nav-pills > li > a:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_command_bar_top_cont, .div_orders_bar_top_cont",
+      "transitions": [
+        "-webkit-transition: all .1s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_command_bar_top_cont.show, .div_orders_bar_top_cont.show",
+      "transitions": [
+        "-webkit-transition: all .1s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_command_item",
+      "transitions": [
+        "-webkit-transition: all .2s ease-in-out .1s"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_command_item.show",
+      "transitions": [
+        "-webkit-transition: all 0s ease-in-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".show.persisting .div_command_item",
+      "transitions": [
+        "-webkit-transition: all .1s ease-in-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".show.persisting .div_command_item.show",
+      "transitions": [
+        "-webkit-transition: all .1s ease-in-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_command_item a",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_command_item a:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".cmd_order:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_order_item_menu",
+      "transitions": [
+        "-webkit-transition: all .1s ease-in"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_order_item_menu.show",
+      "transitions": [
+        "-webkit-transition: all .1s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_order_menu_cont",
+      "transitions": [
+        "-webkit-transition: all .1s ease-in"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_action_bar.css",
+      "selector": ".div_order_item_menu.show .div_order_menu_cont",
+      "transitions": [
+        "-webkit-transition: all .1s ease-in"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_build_bar.css",
+      "selector": ".div_build_item",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_build_bar.css",
+      "selector": ".div_build_item:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_build_bar.css",
+      "selector": ".span_build_bar_tab",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_build_bar.css",
+      "selector": ".span_build_bar_tab:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_econ.css",
+      "selector": ".div-econ-bar",
+      "transitions": [
+        "-webkit-transition: all .2s ease-in-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_econ.css",
+      "selector": ".div_rate_ctr_overall",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_menu.css",
+      "selector": ".div_game_menu_item",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_menu.css",
+      "selector": ".active .div_game_menu_item:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_planets.css",
+      "selector": ".div_planet_list_item_group",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_planets.css",
+      "selector": ".div_planet_list_item_group:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_players.css",
+      "selector": ".div_spectator_visibility:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_players.css",
+      "selector": ".btn_player_known",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_players.css",
+      "selector": ".btn_player_known:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_time_bar_alerts.css",
+      "selector": ".alert_list_item",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_time_bar_alerts.css",
+      "selector": ".alert_list_item:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".btn_special_weapon",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": "div.combat_stack.displayed",
+      "transitions": [
+        "-webkit-transition: all .1s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": "div.combat",
+      "transitions": [
+        "-webkit-transition: background .1s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": "div.combat .loss_summary",
+      "transitions": [
+        "-webkit-transition: all .1s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert",
+      "transitions": [
+        "-webkit-transition: all 2s ease-in-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_commander",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_commander:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_ready",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_ready:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_death",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_death:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_misc",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/live_game/live_game_unit_alert.css",
+      "selector": ".div_unit_alert_misc:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/load_planet/load_planet.css",
+      "selector": ".one-system, .one-planet",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/load_planet/load_planet.css",
+      "selector": ".one-system:hover, one-planet:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game.css",
+      "selector": ".btn_toggle, .btn_toggle_shared_army",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game.css",
+      "selector": ".btn_toggle:hover, .btn_toggle_shared_army:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game.css",
+      "selector": ".btn_toggle:active, .btn_toggle.live, .btn_toggle_shared_army.on",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game.css",
+      "selector": ".econ-button:hover",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game.css",
+      "selector": ".nav-pills > li > a",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game.css",
+      "selector": ".nav-pills > li > a:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game_cinematic.css",
+      "selector": "body-dock.fade",
+      "transitions": [
+        "-webkit-transition: 1s"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game_cinematic.css",
+      "selector": ".topTeam",
+      "transitions": [
+        "-webkit-transition: 1s"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game_cinematic.css",
+      "selector": ".offTop",
+      "transitions": [
+        "-webkit-transition: 1s"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game_cinematic.css",
+      "selector": ".bottomTeam",
+      "transitions": [
+        "-webkit-transition: 1s"
+      ]
+    },
+    {
+      "file": "game/new_game/new_game_cinematic.css",
+      "selector": ".offBottom",
+      "transitions": [
+        "-webkit-transition: 1s"
+      ]
+    },
+    {
+      "file": "game/start/start.css",
+      "selector": "#background_commander",
+      "transitions": [
+        "transition-property: opacity",
+        "transition-duration: 0.66s",
+        "transition-timing-function: ease-in-out"
+      ]
+    },
+    {
+      "file": "game/start/start.css",
+      "selector": ".div_kickstarter_watermark",
+      "transitions": [
+        "transition: background .15s"
+      ]
+    },
+    {
+      "file": "game/start/start.css",
+      "selector": ".btn_upgrade",
+      "transitions": [
+        "transition: background .15s"
+      ]
+    },
+    {
+      "file": "game/start/start.css",
+      "selector": ".div_kickstarter_dialog .credits_bground",
+      "transitions": [
+        "-webkit-transition: .10s ease-out"
+      ]
+    },
+    {
+      "file": "game/start/start.css",
+      "selector": ".nav-pills > li > a",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/start/start.css",
+      "selector": ".nav-pills > li > a:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/system_editor/system_editor.css",
+      "selector": ".btn_toggle",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "game/system_editor/system_editor.css",
+      "selector": ".btn_toggle:hover, .btn_toggle_shared_army:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "game/system_editor/system_editor.css",
+      "selector": ".btn_toggle:active, .btn_toggle.live, .btn_toggle_shared_army.on",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_std:hover",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_hero:hover",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_neg:hover",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_std_gray:hover",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_back",
+      "transitions": [
+        "-webkit-transition: .3s"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".span_hotkey",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_std_ix",
+      "transitions": [
+        "-webkit-transition-duration: .3s",
+        "-webkit-transition-timing-function: ease-out",
+        "-webkit-transition-delay: .001s"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".btn_std_ix:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".dropdown-menu > li > a:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".dropdown-menu > li > a",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "shared/css/global.css",
+      "selector": ".fade",
+      "transitions": [
+        "-webkit-transition: none",
+        "transition: none"
+      ]
+    },
+    {
+      "file": "uberbar/uberbar.css",
+      "selector": ".btn_toggle",
+      "transitions": [
+        "-webkit-transition: .3s ease-out"
+      ]
+    },
+    {
+      "file": "uberbar/uberbar.css",
+      "selector": ".btn_toggle:hover",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    },
+    {
+      "file": "uberbar/uberbar.css",
+      "selector": ".btn_toggle:active, .btn_toggle.live",
+      "transitions": [
+        "-webkit-transition: none"
+      ]
+    }
+  ]
+}

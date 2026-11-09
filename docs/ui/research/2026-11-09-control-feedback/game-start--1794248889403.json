@@ -1,0 +1,203 @@
+{
+  "setup": {
+    "x": 445.1906280517578,
+    "y": 31.049999237060547,
+    "url": "coui://ui/main/game/start/start.html",
+    "size": [
+      1920,
+      1080
+    ],
+    "scale": 1
+  },
+  "selector": ".top-nav-mods",
+  "results": [
+    {
+      "mode": "baseline",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "leave": {
+        "duration": "0.3s",
+        "delay": "0.001s",
+        "property": "all",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "settled": {
+        "duration": "0.3s",
+        "delay": "0.001s",
+        "property": "all",
+        "background": "rgba(0, 200, 0, 0.117647)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      }
+    },
+    {
+      "mode": "patched",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "leave": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 200, 0, 0.117647)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "settled": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 200, 0, 0.117647)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      }
+    },
+    {
+      "mode": "baseline-restored",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "leave": {
+        "duration": "0.3s",
+        "delay": "0.001s",
+        "property": "all",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "settled": {
+        "duration": "0.3s",
+        "delay": "0.001s",
+        "property": "all",
+        "background": "rgba(0, 200, 0, 0.117647)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      }
+    },
+    {
+      "mode": "patched-final",
+      "hover": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "pressed": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgb(0, 120, 0)",
+        "shadow": "rgb(0, 221, 0) 0px 0px 12px 0px inset",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "leave": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 200, 0, 0.117647)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      },
+      "settled": {
+        "duration": "0s",
+        "delay": "0s",
+        "property": "none",
+        "background": "rgba(0, 200, 0, 0.117647)",
+        "shadow": "none",
+        "pointerEvents": "auto",
+        "cls": "top-nav-btn top-nav-mods btn_std_ix",
+        "focused": false,
+        "hit": true
+      }
+    }
+  ]
+}

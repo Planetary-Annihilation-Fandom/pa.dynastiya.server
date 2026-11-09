@@ -1,0 +1,13 @@
+{
+  "before": {
+    "tag": "INPUT",
+    "value": "",
+    "duration": "0s"
+  },
+  "after": {
+    "tag": "BUTTON",
+    "cls": "btn dropdown-toggle selectpicker btn-default",
+    "duration": "0s",
+    "attached": true
+  }
+}

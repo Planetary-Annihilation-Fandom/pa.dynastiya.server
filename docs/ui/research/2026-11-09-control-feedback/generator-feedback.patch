@@ -1,0 +1,137 @@
+diff --git a/ui/mods/dynastiya.map_generator/map_generator.css b/ui/mods/dynastiya.map_generator/map_generator.css
+index 072104d..0100396 100644
+--- a/ui/mods/dynastiya.map_generator/map_generator.css
++++ b/ui/mods/dynastiya.map_generator/map_generator.css
+@@ -92,6 +92,11 @@ button.option {
+     overflow: hidden;
+ }
+ 
++button.option:focus {
++    outline: 1px solid #FFFFFF;
++    outline-offset: 2px;
++}
++
+ button.option.selected {
+     box-shadow: inset 0px 0px 8px #285AB5;
+     border: 1px solid #06FAE8;
+@@ -313,4 +318,4 @@ input[type="range"]:focus::-webkit-slider-thumb {
+     color: rgb(122, 108, 245);
+     text-shadow: 0px 0px 0px rgb(77, 161, 240);
+     pointer-events: none;
+-}
+\ No newline at end of file
++}
+diff --git a/ui/mods/dynastiya.map_generator/map_generator.html b/ui/mods/dynastiya.map_generator/map_generator.html
+index 69cc9c7..16ccfb8 100644
+--- a/ui/mods/dynastiya.map_generator/map_generator.html
++++ b/ui/mods/dynastiya.map_generator/map_generator.html
+@@ -167,9 +167,12 @@
+                 tooltip: '!LOC:Click to generate planet',
+                 click_sound: 'default',
+                 rollover_sound: 'default',
+-                click: generate" data-placement="bottom">
+-                <label class="generate-planet-label">Generate Planet</label>
++                click: generate,
++                enable: !generationPending() && model.canChangeSettings(),
++                attr: { 'aria-busy': generationPending() ? 'true' : 'false' }" data-placement="bottom">
++                <label class="generate-planet-label" data-bind="text: generationPending() ? loc('!LOC:Generating...') : loc('!LOC:Generate Planet')">Generate Planet</label>
+             </button>
++            <div role="alert" data-bind="visible: generationError, text: generationError"></div>
+         </div>
+     </div>
+ </body>
+@@ -204,4 +207,4 @@
+     })
+ </script>
+ 
+-</html>
+\ No newline at end of file
++</html>
+diff --git a/ui/mods/dynastiya.map_generator/map_generator.js b/ui/mods/dynastiya.map_generator/map_generator.js
+index 77a0f47..ff484a6 100644
+--- a/ui/mods/dynastiya.map_generator/map_generator.js
++++ b/ui/mods/dynastiya.map_generator/map_generator.js
+@@ -71,7 +71,38 @@ var biomes_id_list = [
+     "metal"
+ ];
+ 
++var generationPending = ko.observable(false);
++var generationError = ko.observable('');
++
+ function generate() {
++    if (generationPending() || !model.canChangeSettings()) return;
++    generationError('');
++    generationPending(true);
++    // Give the pending label a paint opportunity before preparing the system.
++    requestAnimationFrame(function () {
++        requestAnimationFrame(function () {
++            if (!model.canChangeSettings()) {
++                generationPending(false);
++                return;
++            }
++            try {
++                generateSystem().then(function () {
++                    generationPending(false);
++                }, generationFailed);
++            } catch (error) {
++                generationFailed(error);
++            }
++        });
++    });
++}
++
++function generationFailed(error) {
++    console.error('Dynastiya planet generation failed', error);
++    generationError(loc('!LOC:Planet generation failed. Try again.'));
++    generationPending(false);
++}
++
++function generateSystem() {
+ 
+     // TODO: use biome generation option
+     var biome = _data.get_option('biome');
+@@ -126,8 +157,9 @@ function generate() {
+     console.log(biome);
+     console.log(biome_id);
+ 
+-    get_random_system('Generated', get_generation_size(), biome_id, get_metal_density(),
++    return get_random_system('Generated', get_generation_size(), biome_id, get_metal_density(),
+         get_additional_surface_parameters(temperature, undefined, undefined)).then(function (system) {
++            if (!model.canChangeSettings()) return;
+             model.system(system);
+             model.updateSystem(model.system());
+             model.changeSettings();
+@@ -369,7 +401,8 @@ function get_random_system(planet_title, planet_size, biomeName, base_metal_dens
+                 return data;
+             });
+         var nameGet = $.Deferred();
+-        api.game.getRandomPlanetName().then(function (name) { nameGet.resolve(name); });
++        api.game.getRandomPlanetName().then(function (name) { nameGet.resolve(name); },
++            function (error) { nameGet.reject(error); });
+         return $.when(biomeGet, nameGet).then(function (biomeInfo, name) {
+             plnt.name = name;
+             return plnt;
+diff --git a/ui/mods/dynastiya.map_generator/view.js b/ui/mods/dynastiya.map_generator/view.js
+index 2f7a240..bb236bf 100644
+--- a/ui/mods/dynastiya.map_generator/view.js
++++ b/ui/mods/dynastiya.map_generator/view.js
+@@ -34,10 +34,10 @@ define(['require', './data', 'text!./map_generator.html'], function (require) {
+                     var button = $(jquery_element).find("button");
+                     // im using button[0] because button is a jquery object and the first element is the vanilla button
+                     if (button[0] === data.currentTarget) {
+-                        $(button).addClass('selected').blur();
++                        $(button).addClass('selected');
+                         $(button).children('img').addClass('selected');
+                     } else {
+-                        $(button).removeClass('selected').blur();
++                        $(button).removeClass('selected');
+                         $(button).children('img').removeClass('selected');
+                     }
+                 });
+@@ -98,4 +98,4 @@ define(['require', './data', 'text!./map_generator.html'], function (require) {
+         // assign view model constructor that need to be instantiated by caller
+         view_model: new ViewModel()
+     };
+-});
+\ No newline at end of file
++});
