@@ -1,0 +1,259 @@
+ui/main\uberbar\uberbar.css:529:@-webkit-keyframes chat-alert {
+ui/main\uberbar\uberbar.css:550:    -webkit-animation-name: chat-alert;
+ui/main\uberbar\uberbar.css:551:    -webkit-animation-duration: .3s;
+ui/main\uberbar\uberbar.css:552:    -webkit-animation-iteration-count: 2;
+ui/main\uberbar\uberbar.css:750:    -webkit-animation: fadeout;
+ui/main\uberbar\uberbar.css:760:        -webkit-animation: none;
+ui/main\uberbar\uberbar.css:770:        -webkit-animation: none;
+ui/main\game\system_editor\system_editor.css:647:    -webkit-animation: fadeout;
+ui/main\game\system_editor\system_editor.css:657:        -webkit-animation: none;
+ui/main\game\system_editor\system_editor.css:667:        -webkit-animation: none;
+ui/main\game\start\start.css:628:@-webkit-keyframes slide_to_right_1 {
+ui/main\game\start\start.css:646:    -webkit-animation-name: slide_to_right_1;
+ui/main\game\start\start.css:647:    -webkit-animation-duration: 20s;
+ui/main\game\start\start.css:648:    -webkit-animation-timing-function: linear;
+ui/main\game\start\start.css:649:    -webkit-animation-iteration-count: infinite;
+ui/main\game\start\start.css:650:    -webkit-animation-direction: normal;
+ui/main\game\start\start.css:651:    -webkit-animation-delay: 0;
+ui/main\game\start\start.css:652:    -webkit-animation-play-state: running;
+ui/main\game\start\start.css:653:    -webkit-animation-fill-mode: forwards;
+ui/main\game\start\start.css:656:@-webkit-keyframes slide_to_right_2 {
+ui/main\game\start\start.css:674:    -webkit-animation-name: slide_to_right_2;
+ui/main\game\start\start.css:675:    -webkit-animation-duration: 30s;
+ui/main\game\start\start.css:676:    -webkit-animation-timing-function: linear;
+ui/main\game\start\start.css:677:    -webkit-animation-iteration-count: infinite;
+ui/main\game\start\start.css:678:    -webkit-animation-direction: normal;
+ui/main\game\start\start.css:679:    -webkit-animation-delay: 0;
+ui/main\game\start\start.css:680:    -webkit-animation-play-state: running;
+ui/main\game\start\start.css:681:    -webkit-animation-fill-mode: forwards;
+ui/main\game\start\start.css:1413:    -webkit-animation: fadeout;
+ui/main\game\start\start.css:2012:    -webkit-animation: fadeout;
+ui/main\game\start\start.css:2024:        -webkit-animation: none;
+ui/main\game\new_game\new_game.css:756:    -webkit-animation: fadeout;
+ui/main\game\new_game\new_game.css:787:        -webkit-animation: none;
+ui/main\game\new_game\new_game.css:797:        -webkit-animation: none;
+ui/main\game\new_game\new_game.css:1572:    -webkit-animation: fadeout;
+ui/main\game\new_game\new_game.css:1584:        -webkit-animation: none;
+ui/main\game\game_over\game_over.css:11:@-webkit-keyframes fadein {
+ui/main\game\game_over\game_over.css:30:    -webkit-animation: fadein 1.0s ease-in-out;
+ui/main\game\game_over\game_over.css:309:.badge_animation {
+ui/main\game\game_over\game_over.css:314:    -webkit-animation: loading_pulse;
+ui/main\game\game_over\game_over.css:315:    -webkit-animation-duration: 1.04s;
+ui/main\game\game_over\game_over.css:316:    -webkit-animation-iteration-count: infinite;
+ui/main\game\game_over\game_over.css:317:    -webkit-animation-direction: linear;
+ui/main\game\game_over\game_over.css:323:    -webkit-animation-delay: 0.13s;
+ui/main\game\game_over\game_over.css:327:    -webkit-animation-delay: 0.26s;
+ui/main\game\game_over\game_over.css:331:    -webkit-animation-delay: 0.39s;
+ui/main\game\game_over\game_over.css:335:    -webkit-animation-delay: 0.52s;
+ui/main\game\game_over\game_over.css:339:    -webkit-animation-delay: 0.65s;
+ui/main\game\game_over\game_over.css:342:@-webkit-keyframes loading_pulse {
+ui/main\game\gamestats\gamestats.css:241:        -webkit-animation: none;
+ui/main\game\matchmaking\matchmaking.css:194:    -webkit-animation: commander-pulse 1s infinite;
+ui/main\game\matchmaking\matchmaking.css:197:@-webkit-keyframes commander-pulse {
+ui/main\game\load_planet\load_planet.css:46:    -webkit-animation: tile_fadeout;
+ui/main\game\load_planet\load_planet.css:56:        -webkit-animation: none;
+ui/main\game\load_planet\load_planet.css:139:@-webkit-keyframes tile_fadeout {
+ui/main\game\galactic_war\gw_war_over\gw_war_over.css:16:    -webkit-animation: fadein .1s ease-in;
+ui/main\game\galactic_war\gw_war_over\gw_war_over.css:17:    -webkit-animation-fill-mode: forwards;
+ui/main\game\galactic_war\gw_war_over\gw_war_over.css:22:    -webkit-animation: fadein .35s ease-in;
+ui/main\game\galactic_war\gw_war_over\gw_war_over.css:23:    -webkit-animation-fill-mode: forwards;
+ui/main\game\galactic_war\gw_war_over\gw_war_over.css:24:    -webkit-animation-delay: .1s;
+ui/main\game\galactic_war\gw_war_over\gw_war_over.css:197:@-webkit-keyframes fadein {
+ui/main\game\galactic_war\gw_start\gw_start.css:524:        -webkit-animation: tile_fadeout;
+ui/main\game\galactic_war\gw_start\gw_start.css:531:            -webkit-animation: none;
+ui/main\game\galactic_war\gw_start\gw_start.css:694:    -webkit-animation: tile_fadeout;
+ui/main\game\galactic_war\gw_start\gw_start.css:706:        -webkit-animation: none;
+ui/main\game\galactic_war\gw_play\gw_play.css:398:    -webkit-animation: fadeout;
+ui/main\game\galactic_war\gw_play\gw_play.css:409:        -webkit-animation: none;
+ui/main\game\galactic_war\gw_play\gw_play.css:683:    -webkit-animation: fadeout;
+ui/main\game\galactic_war\gw_play\gw_play.css:693:    -webkit-animation: none;
+ui/main\game\galactic_war\gw_play\gw_play.css:703:    -webkit-animation: none;
+ui/main\game\galactic_war\gw_play\gw_play.css:1047:    -webkit-animation: window_appear .07s;
+ui/main\game\galactic_war\gw_play\gw_play.css:1364:    -webkit-animation: connecting .5s ease-in-out;
+ui/main\game\galactic_war\gw_play\gw_play.css:1373:@-webkit-keyframes connecting {
+ui/main\game\community_mods\css\start.css:270:@-webkit-keyframes community_mods_pulse
+ui/main\game\community_mods\css\start.css:293:    -webkit-animation: community_mods_pulse 5s infinite;
+ui/main\game\community_mods\css\start.css:298:    -webkit-animation: none;
+ui/main\game\armory\armory.css:39:    -webkit-animation: fadeout;
+ui/main\game\armory\armory.css:48:        -webkit-animation: none;
+ui/main\game\armory\armory.css:84:@-webkit-keyframes fadeout {
+ui/main\shared\js\thirdparty\bootstrap-3.0.3\css\bootstrap.css:5408:@-webkit-keyframes progress-bar-stripes {
+ui/main\shared\js\thirdparty\bootstrap-3.0.3\css\bootstrap.css:5417:@keyframes progress-bar-stripes {
+ui/main\shared\js\thirdparty\bootstrap-3.0.3\css\bootstrap.css:5458:  -webkit-animation: progress-bar-stripes 2s linear infinite;
+ui/main\shared\js\thirdparty\bootstrap-3.0.3\css\bootstrap.css:5459:          animation: progress-bar-stripes 2s linear infinite;
+ui/main\game\armory\adyen\css\screen.css:274:    -webkit-animation: fadeout;
+ui/main\game\armory\adyen\css\screen.css:284:        -webkit-animation: none;
+ui/main\game\armory\adyen\css\screen.css:803:    -webkit-animation: fadeout;
+ui/main\game\armory\adyen\css\screen.css:813:        -webkit-animation: none;
+ui/main\game\armory\adyen\css\screen.css:827:@-webkit-keyframes fadeout {
+ui/main\game\live_game\live_game_econ.css:363:    -webkit-animation: reward_appear;
+ui/main\game\live_game\live_game_econ.css:364:    -webkit-animation-duration: 2.2s;
+ui/main\game\live_game\live_game_econ.css:367:@-webkit-keyframes reward_appear {
+ui/main\game\live_game\live_game_build_hover.css:141:                    -webkit-animation: none;
+ui/main\game\live_game\live_game_build_bar.css:95:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_build_bar.css:105:            -webkit-animation: none;
+ui/main\game\live_game\live_game_build_bar.css:210:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_build_bar.css:223:    -webkit-animation: none;
+ui/main\game\live_game\live_game_action_bar.css:88:        -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_action_bar.css:96:            -webkit-animation: none;
+ui/main\game\live_game\live_game_action_bar.css:232:    -webkit-animation: none;
+ui/main\game\live_game\live_game.css:505:@-webkit-keyframes labelopen {
+ui/main\game\live_game\live_game.css:515:@-webkit-keyframes labelappear {
+ui/main\game\live_game\live_game.css:529:@-webkit-keyframes labelclose {
+ui/main\game\live_game\live_game.css:539:@-webkit-keyframes labeldisappear {
+ui/main\game\live_game\live_game.css:549:@-webkit-keyframes containerdisappear {
+ui/main\game\live_game\live_game.css:577:    -webkit-animation: labelopen .5s ease-out forwards;
+ui/main\game\live_game\live_game.css:583:    -webkit-animation: labelappear .5s ease-out forwards;
+ui/main\game\live_game\live_game.css:588:    -webkit-animation: labelclose 10000.0s ease-out forwards;
+ui/main\game\live_game\live_game.css:595:    -webkit-animation: containerdisappear .5s ease-out forwards;
+ui/main\game\live_game\live_game.css:603:    -webkit-animation: labeldisappear .2s ease-out forwards;
+ui/main\game\live_game\live_game.css:606:@-webkit-keyframes animated_flash_red {
+ui/main\game\live_game\live_game.css:616:@-webkit-keyframes animated_flash_green {
+ui/main\game\live_game\live_game.css:626:@-webkit-keyframes animated_flash_black {
+ui/main\game\live_game\live_game.css:636:@-webkit-keyframes animated_flash_white {
+ui/main\game\live_game\live_game.css:647:@-webkit-keyframes animated_flash_cyan {
+ui/main\game\live_game\live_game.css:659:    -webkit-animation-name: animated_flash_red;
+ui/main\game\live_game\live_game.css:660:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game.css:661:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game.css:662:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game.css:663:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game.css:664:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game.css:668:    -webkit-animation-name: animated_flash_green;
+ui/main\game\live_game\live_game.css:669:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game.css:670:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game.css:671:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game.css:672:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game.css:673:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game.css:677:    -webkit-animation-name: animated_flash_black;
+ui/main\game\live_game\live_game.css:678:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game.css:679:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game.css:680:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game.css:681:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game.css:682:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game.css:686:    -webkit-animation-name: animated_flash_white;
+ui/main\game\live_game\live_game.css:687:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game.css:688:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game.css:689:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game.css:690:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game.css:691:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game.css:695:    -webkit-animation-name: animated_flash_cyan;
+ui/main\game\live_game\live_game.css:696:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game.css:697:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game.css:698:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game.css:699:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game.css:700:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game.css:705:    -webkit-animation: labelopen 2s;
+ui/main\game\live_game\live_game.css:858:                    -webkit-animation: none;
+ui/main\game\live_game\live_game_unit_alert.css:50:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_unit_alert.css:148:    -webkit-animation: combatappear .05s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:341:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_unit_alert.css:347:        -webkit-animation: none;
+ui/main\game\live_game\live_game_unit_alert.css:362:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_unit_alert.css:368:        -webkit-animation: none;
+ui/main\game\live_game\live_game_unit_alert.css:382:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_unit_alert.css:388:        -webkit-animation: none;
+ui/main\game\live_game\live_game_unit_alert.css:403:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_unit_alert.css:409:        -webkit-animation: none;
+ui/main\game\live_game\live_game_unit_alert.css:442:    -webkit-animation: labelappear .5s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:450:@-webkit-keyframes labelopen {
+ui/main\game\live_game\live_game_unit_alert.css:460:@-webkit-keyframes labelappear {
+ui/main\game\live_game\live_game_unit_alert.css:474:@-webkit-keyframes labelclose {
+ui/main\game\live_game\live_game_unit_alert.css:484:@-webkit-keyframes labeldisappear {
+ui/main\game\live_game\live_game_unit_alert.css:494:@-webkit-keyframes containerdisappear {
+ui/main\game\live_game\live_game_unit_alert.css:528:    -webkit-animation: labelopen .5s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:536:    -webkit-animation: labelappear .5s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:541:    -webkit-animation: labelclose 10000.0s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:548:    -webkit-animation: containerdisappear .5s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:556:    -webkit-animation: labeldisappear .2s ease-out forwards;
+ui/main\game\live_game\live_game_unit_alert.css:559:@-webkit-keyframes combatappear {
+ui/main\game\live_game\live_game_unit_alert.css:570:@-webkit-keyframes animated_flash_red {
+ui/main\game\live_game\live_game_unit_alert.css:580:@-webkit-keyframes animated_flash_green {
+ui/main\game\live_game\live_game_unit_alert.css:590:@-webkit-keyframes animated_flash_black {
+ui/main\game\live_game\live_game_unit_alert.css:600:@-webkit-keyframes animated_flash_white {
+ui/main\game\live_game\live_game_unit_alert.css:610:@-webkit-keyframes animated_flash_cyan {
+ui/main\game\live_game\live_game_unit_alert.css:629:    -webkit-animation: closedeathalert .5s;
+ui/main\game\live_game\live_game_unit_alert.css:630:    -webkit-animation-delay: 4.5s;
+ui/main\game\live_game\live_game_unit_alert.css:631:    -webkit-animation-fill-mode: forwards;
+ui/main\game\live_game\live_game_unit_alert.css:644:    -webkit-animation: deathalert 3s linear;
+ui/main\game\live_game\live_game_unit_alert.css:658:        -webkit-animation: labelappear .5s linear forwards;
+ui/main\game\live_game\live_game_unit_alert.css:700:@-webkit-keyframes closedeathalert {
+ui/main\game\live_game\live_game_unit_alert.css:714:@-webkit-keyframes deathalert {
+ui/main\game\live_game\live_game_unit_alert.css:742:    -webkit-animation-name: animated_flash_red;
+ui/main\game\live_game\live_game_unit_alert.css:743:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game_unit_alert.css:744:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game_unit_alert.css:745:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game_unit_alert.css:746:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game_unit_alert.css:747:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game_unit_alert.css:751:    -webkit-animation-name: animated_flash_green;
+ui/main\game\live_game\live_game_unit_alert.css:752:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game_unit_alert.css:753:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game_unit_alert.css:754:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game_unit_alert.css:755:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game_unit_alert.css:756:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game_unit_alert.css:760:    -webkit-animation-name: animated_flash_black;
+ui/main\game\live_game\live_game_unit_alert.css:761:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game_unit_alert.css:762:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game_unit_alert.css:763:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game_unit_alert.css:764:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game_unit_alert.css:765:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game_unit_alert.css:769:    -webkit-animation-name: animated_flash_white;
+ui/main\game\live_game\live_game_unit_alert.css:770:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game_unit_alert.css:771:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game_unit_alert.css:772:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game_unit_alert.css:773:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game_unit_alert.css:774:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game_unit_alert.css:778:    -webkit-animation-name: animated_flash_cyan;
+ui/main\game\live_game\live_game_unit_alert.css:779:    -webkit-animation-duration: 0.4s;
+ui/main\game\live_game\live_game_unit_alert.css:780:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game_unit_alert.css:781:    -webkit-animation-iteration-count: 4;
+ui/main\game\live_game\live_game_unit_alert.css:782:    -webkit-animation-direction: alternate;
+ui/main\game\live_game\live_game_unit_alert.css:783:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game_unit_alert.css:788:    -webkit-animation: labelopen 2s;
+ui/main\game\live_game\live_game_time_bar_alerts.css:42:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_time_bar_alerts.css:59:    -webkit-animation: none;
+ui/main\game\live_game\live_game_players.css:103:    -webkit-animation: none;
+ui/main\game\live_game\live_game_players.css:554:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_players.css:562:        -webkit-animation: none;
+ui/main\game\live_game\live_game_planets.css:149:    -webkit-animation: none;
+ui/main\game\live_game\live_game_planets.css:159:    -webkit-animation: none;
+ui/main\game\live_game\live_game_paused_popup.css:41:            -webkit-animation: pause_glow 2.2s infinite ease-in-out;
+ui/main\game\live_game\live_game_paused_popup.css:106:.img_loading_animation.working.std.options_bar {
+ui/main\game\live_game\live_game_paused_popup.css:120:@-webkit-keyframes pause_glow {
+ui/main\game\live_game\live_game_options_bar.css:117:@-webkit-keyframes uberbar_notification {
+ui/main\game\live_game\live_game_options_bar.css:138:        -webkit-animation-name: uberbar_notification;
+ui/main\game\live_game\live_game_options_bar.css:139:        -webkit-animation-duration: .3s;
+ui/main\game\live_game\live_game_options_bar.css:140:        -webkit-animation-iteration-count: 3;
+ui/main\game\live_game\live_game_message.css:140:@-webkit-keyframes slide_to_left {
+ui/main\game\live_game\live_game_message.css:151:    -webkit-animation-name: slide_to_left;
+ui/main\game\live_game\live_game_message.css:152:    -webkit-animation-duration: 60s;
+ui/main\game\live_game\live_game_message.css:153:    -webkit-animation-timing-function: linear;
+ui/main\game\live_game\live_game_message.css:154:    -webkit-animation-iteration-count: 1;
+ui/main\game\live_game\live_game_message.css:155:    -webkit-animation-direction: normal;
+ui/main\game\live_game\live_game_message.css:156:    -webkit-animation-delay: 0;
+ui/main\game\live_game\live_game_message.css:157:    -webkit-animation-play-state: running;
+ui/main\game\live_game\live_game_message.css:158:    -webkit-animation-fill-mode: forwards;
+ui/main\game\live_game\live_game_menu.css:63:    -webkit-animation: fadeout;
+ui/main\game\live_game\live_game_menu.css:74:            -webkit-animation: none;
+ui/main\main.css:24:    -webkit-animation-duration: 0.25s;
+ui/main\main.css:25:    -webkit-animation-name: fadeIn;
+ui/main\main.css:35:    -webkit-animation-duration: 1.25s;
+ui/main\main.css:36:    -webkit-animation-name: fadeOut;
+ui/main\main.css:53:    -webkit-animation-duration: 0.25s;
+ui/main\main.css:54:    -webkit-animation-name: fadeIn;
+ui/main\main.css:59:    -webkit-animation-duration: 0.75s;
+ui/main\main.css:60:    -webkit-animation-name: fadeOut;
+ui/main\main.css:65:@-webkit-keyframes fadeOut {
+ui/main\main.css:75:@-webkit-keyframes fadeIn {
+ui/main\shared\css\global.css:715:.img_loading_animation {
+ui/main\shared\css\global.css:1078:    -webkit-animation: fadeout;
+ui/main\shared\css\global.css:1446:    -webkit-animation: fadeout;
+ui/main\shared\css\global.css:1462:        -webkit-animation: none;
+ui/main\shared\css\global.css:1511:@-webkit-keyframes fadeout {
+ui/main\shared\css\global.css:1529:@-webkit-keyframes window_appear {
+ui/main\shared\css\global.css:1539:@-webkit-keyframes uifadein {
+ui/main\shared\css\global.css:1582:    -webkit-animation: none;
+ui/main\shared\css\global.css:1608:    -webkit-animation: fadeout;
+ui/main\shared\css\global.css:2149:    -webkit-animation: loading_rotation .7s infinite linear;
+ui/main\shared\css\global.css:2171:@-webkit-keyframes loading_rotation {
+ui/main\shared\css\landing_page.css:59:    -webkit-animation: header_scroll 24s linear infinite;
+ui/main\shared\css\landing_page.css:65:@-webkit-keyframes header_scroll {
