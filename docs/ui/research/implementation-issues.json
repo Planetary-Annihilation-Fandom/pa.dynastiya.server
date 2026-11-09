@@ -1,44 +1,57 @@
 [
   {
-    "domain": "M",
     "name": "Измерения",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/4",
-    "title": "Измерить задержки и равномерность кадров всего игрового UI"
+    "title": "Измерить задержки и равномерность кадров всего игрового UI",
+    "branch": "chore/ui/4-latency-measurements",
+    "depends_on": []
   },
   {
-    "domain": "C",
     "name": "Управление",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/5",
-    "title": "Ускорить состояния кнопок, полей и выбора во всём UI"
+    "title": "Ускорить состояния кнопок, полей и выбора во всём UI",
+    "branch": "fix/ui/5-control-feedback",
+    "depends_on": []
   },
   {
-    "domain": "T",
     "name": "Tooltip",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/6",
-    "title": "Переработать общие tooltip и задержки всплывающих подсказок"
+    "title": "Переработать общие tooltip и задержки всплывающих подсказок",
+    "branch": "fix/ui/6-tooltip-lifecycle",
+    "depends_on": []
   },
   {
-    "domain": "R",
     "name": "Рендеринг",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/7",
-    "title": "Устранить паузы от индикаторов и оптимизировать анимации UI"
+    "title": "Устранить паузы от индикаторов и оптимизировать анимации UI",
+    "branch": "perf/ui/7-css-animation-rendering",
+    "depends_on": []
   },
   {
-    "domain": "D",
     "name": "Данные и DOM",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/8",
-    "title": "Оптимизировать JS, Knockout и обновления данных игрового UI"
+    "title": "Оптимизировать JS, Knockout и обновления данных игрового UI",
+    "branch": "perf/ui/8-script-dom-updates",
+    "depends_on": [
+      4,
+      7,
+      10
+    ]
   },
   {
-    "domain": "P",
     "name": "Панели",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/9",
-    "title": "Оптимизировать панели, holodeck и предпросмотры по жизненному циклу"
+    "title": "Оптимизировать панели, holodeck и предпросмотры по жизненному циклу",
+    "branch": "perf/ui/9-panel-lifecycle",
+    "depends_on": [
+      4
+    ]
   },
   {
-    "domain": "A",
-    "name": "Ресурсы и компоненты",
+    "name": "Разметка и ресурсы",
     "url": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/10",
-    "title": "Создать общие ресурсы и компоненты UI с проверенной стоимостью"
+    "title": "Оптимизировать разметку и ресурсы игрового UI",
+    "branch": "perf/ui/10-markup-resources",
+    "depends_on": []
   }
 ]

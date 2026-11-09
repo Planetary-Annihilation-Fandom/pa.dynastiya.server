@@ -22,12 +22,26 @@
 
 | Домен | Задача реализации |
 |---|---|
-| M. Измерения | [#4: Измерить задержки и равномерность кадров всего игрового UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/4) |
-| C. Управление | [#5: Ускорить состояния кнопок, полей и выбора во всём UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/5) |
-| T. Tooltip | [#6: Переработать общие tooltip и задержки всплывающих подсказок](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/6) |
-| R. Рендеринг | [#7: Устранить паузы от индикаторов и оптимизировать анимации UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/7) |
-| D. Данные и DOM | [#8: Оптимизировать JS, Knockout и обновления данных игрового UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/8) |
-| P. Панели | [#9: Оптимизировать панели, holodeck и предпросмотры по жизненному циклу](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/9) |
-| A. Ресурсы и компоненты | [#10: Создать общие ресурсы и компоненты UI с проверенной стоимостью](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/10) |
+| Измерения | [#4: Измерить задержки и равномерность кадров всего игрового UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/4) |
+| Управление | [#5: Ускорить состояния кнопок, полей и выбора во всём UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/5) |
+| Tooltip | [#6: Переработать общие tooltip и задержки всплывающих подсказок](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/6) |
+| Рендеринг | [#7: Устранить паузы от индикаторов и оптимизировать анимации UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/7) |
+| Данные и DOM | [#8: Оптимизировать JS, Knockout и обновления данных игрового UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/8) |
+| Панели | [#9: Оптимизировать панели, holodeck и предпросмотры по жизненному циклу](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/9) |
+| Разметка и ресурсы | [#10: Оптимизировать разметку и ресурсы игрового UI](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/issues/10) |
 
 Содержание направлений: [план](optimization-plan.md). Задача #3 закрывается как завершённая первичная диагностика и декомпозиция; устранение задержек продолжается в этих задачах.
+
+## Ветки и зависимости реализации
+
+Все рабочие ветки ниже относятся к клиентскому репозиторию и создаются при начале задачи. Канонические условия старта указаны в issue.
+
+| Задача | Ветка | Нужно до начала работ |
+|---|---|---|
+| #4 | `chore/ui/4-latency-measurements` | нет |
+| #5 | `fix/ui/5-control-feedback` | нет |
+| #6 | `fix/ui/6-tooltip-lifecycle` | нет |
+| #7 | `perf/ui/7-css-animation-rendering` | нет |
+| #8 | `perf/ui/8-script-dom-updates` | #4, #7, #10 |
+| #9 | `perf/ui/9-panel-lifecycle` | #4 |
+| #10 | `perf/ui/10-markup-resources` | нет |
