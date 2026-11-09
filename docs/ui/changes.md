@@ -50,6 +50,6 @@
 | #5 | `fix/ui/5-control-feedback` | нет |
 | #6 | `fix/ui/6-tooltip-lifecycle` | нет |
 | #7 | `perf/ui/7-css-animation-rendering` | нет |
-| #8 | `perf/ui/8-script-dom-updates` | #4, #7, #10 |
+| #8 | `perf/ui/8-script-dom-updates` | нет; первый проход по коду пяти основных экранов, профилирование по необходимости |
 | #9 | `perf/ui/9-panel-lifecycle` | #4 |
 | #10 | `perf/ui/10-markup-resources` | нет |
