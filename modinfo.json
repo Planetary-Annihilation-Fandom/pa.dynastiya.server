@@ -10,7 +10,7 @@
     "com.pa.dynastiya.client"
   ],
   "context": "server",
-  "date": "2026-11-09",
+  "date": "2026-11-11",
   "description": "A large-scale overhaul focused on a cohesive, complete gameplay experience.",
   "display_name": "Dynastiya Server",
   "forum": "https://steamcommunity.com/app/386070/discussions/0/",
@@ -18,5 +18,5 @@
   "identifier": "com.pa.dynastiya.server",
   "signature": "not yet implemented",
   "titansOnly": true,
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
