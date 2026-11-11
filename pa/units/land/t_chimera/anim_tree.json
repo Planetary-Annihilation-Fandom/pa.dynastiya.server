@@ -1,0 +1,204 @@
+{
+  "blend_root": {
+    "type": "unit_state",
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "type": "aim_blend",
+        "aim_bone_root": "bone_turret",
+        "node_aim_down": {
+          "type": "bind_pose",
+          "anim_name": "aim_down"
+        },
+        "node_aim_neutral": {
+          "type": "bind_pose"
+        },
+        "child": {
+          "type": "walk",
+          "node_idle": {
+            "type": "playback",
+            "anim_name": "idle"
+          },
+          "node_walk": {
+            "type": "playback",
+            "anim_name": "walk"
+          }
+        }
+      },
+      "dead": {
+        "type": "playback",
+        "looping": false,
+        "anim_name": "death",
+        "events": [
+          {
+            "time": 0,
+            "type": "effect",
+            "parameters": {
+              "bone": "bone_root",
+              "spec": "/pa/units/air/titan_air/titan_air_death.pfx",
+              "effect_scale": 1.0,
+              "attached": true,
+              "death_effect": true,
+              "bone_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "time": 1,
+            "type": "effect",
+            "parameters": {
+              "bone": "bone_root",
+              "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+              "effect_scale": 0.8,
+              "attached": true,
+              "death_effect": true,
+              "bone_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "time": 1.2,
+            "type": "effect",
+            "parameters": {
+              "bone": "bone_root",
+              "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+              "effect_scale": 1.2,
+              "attached": true,
+              "death_effect": true,
+              "bone_offset": [
+                -13.235,
+                6.328,
+                1.456
+              ]
+            }
+          },
+          {
+            "time": 1.4,
+            "type": "effect",
+            "parameters": {
+              "bone": "core",
+              "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+              "effect_scale": 1.4,
+              "attached": true,
+              "death_effect": true,
+              "bone_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "time": 1.6,
+            "type": "effect",
+            "parameters": {
+              "bone": "bone_root",
+              "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+              "effect_scale": 1.6,
+              "attached": true,
+              "death_effect": true,
+              "bone_offset": [
+                0,
+                5,
+                9.6
+              ]
+            }
+          }
+        ]
+      },
+      "ghost": {
+        "type": "bind_pose"
+      }
+    }
+  },
+  "skeleton_controls": [
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_turret_f.l",
+        "rotation_axis": "z",
+        "weapon_index": 0
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_pitch_f.l",
+        "rotation_axis": "x",
+        "weapon_index": 0
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_turret_f.r",
+        "rotation_axis": "z",
+        "weapon_index": 1
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_pitch_f.r",
+        "rotation_axis": "x",
+        "weapon_index": 1
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_turret_b.l",
+        "rotation_axis": "z",
+        "weapon_index": 2
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_pitch_b.l",
+        "rotation_axis": "x",
+        "weapon_index": 2
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_turret_b.r",
+        "rotation_axis": "z",
+        "weapon_index": 3
+      }
+    },
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_pitch_b.r",
+        "rotation_axis": "x",
+        "weapon_index": 3
+      }
+    }
+  ]
+}

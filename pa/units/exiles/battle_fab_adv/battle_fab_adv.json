@@ -1,0 +1,137 @@
+{
+  "si_name": "battle_fab_adv",
+  "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
+  "display_name": "Advanced Hover Fabricator",
+  "description": "!LOC:Constructs Advanced Structures. Can travel over lava and water. Can assist factories.",
+  "strategic_icon_priority": 0,
+  "max_health": 500,
+  "build_metal_cost": 2250,
+  "buildable_types": "(Land & Structure & Advanced | Factory & Advanced & (Bot | Air | Naval | Tank) | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
+  "show_in_orbital_layer": true,
+  "wreckage_health_frac": 1.0,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Custom6",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Vehicle",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Hover"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "navigation": {
+    "type": "hover",
+    "acceleration": 120,
+    "brake": 120,
+    "move_speed": 10,
+    "turn_speed": 120,
+    "turn_in_place": true
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 105
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 105
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/exiles/battle_fab_adv/battle_fab_adv.papa",
+    "animtree": "/pa/anim/exiles/battle_fab_adv_battle_fab_adv.json",
+    "animations": {
+      "hover": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_anim_hover.papa"
+    },
+    "walk_speed": 4.0
+  },
+  "teleportable": {},
+  "tools": [
+    {
+      "spec_id": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_tool_build_arm.json",
+      "aim_bone": "bone_turret_fab"
+    }
+  ],
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx",
+      "effect_scale": 2
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "build",
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam.pfx",
+      "bone": "muzzle_fab.l"
+    },
+    {
+      "type": "build",
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam_mirror.pfx",
+      "bone": "muzzle_fab.r"
+    }
+  ],
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/bot/Sub_Commander_move_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sub_commander"
+    }
+  },
+  "selection_icon": {
+    "diameter": 14
+  },
+  "mesh_bounds": [
+    6,
+    4,
+    6
+  ]
+}

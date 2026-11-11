@@ -1,0 +1,26 @@
+{
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/units/land/t_arta_long/airburst_ammo.json",
+  "ammo_source": "factory",
+  "auto_attack": false,
+  "auto_task_type": "none",
+  "manual_fire": true,
+  "carpet_fire": true,
+  "force_fire_from_muzzle": true,
+  "default_firing_pitch": -45,
+  "max_range": 550,
+  "pitch_range": 89,
+  "pitch_rate": 30,
+  "rate_of_fire": 0.5,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Underwater"
+  ],
+  "yaw_range": 360,
+  "yaw_rate": 30,
+  "firing_arc_pitch": 1,
+  "firing_arc_yaw": 1
+}

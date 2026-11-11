@@ -3,7 +3,10 @@
   "ammo_source": "factory",
   "anti_entity_targets": [
     "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
-    "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json"
+    "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json",
+    "/pa/units/land/missile_facility/large_stun_ammo.json",
+    "/pa/units/land/missile_facility/large_DOT_ammo.json",
+    "/pa/units/land/missile_facility/precision_strike_ammo.json"
   ],
   "auto_attack": false,
   "auto_task_type": "anti_entity",
