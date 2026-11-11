@@ -1,0 +1,192 @@
+{
+  "si_name": "t_chimera",
+  "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
+  "display_name": "Chimera",
+  "description": "!LOC:Support Demi-Titan: Armed with long-range anti-surface and anti-air lasers. It will fire torpedoes instead when underwater. Durable. Amphibious.",
+  "max_health": 20000,
+  "build_metal_cost": 15000,
+  "influence_radius": 400,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        3.1
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Titan",
+    "UNITTYPE_Important",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Custom6"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "navigation": {
+    "type": "amphibious",
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 12,
+    "turn_speed": 25,
+    "group_preference": "back"
+  },
+  "physics": {
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 200
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 200
+        }
+      ]
+    }
+  },
+  "has_death_effects": true,
+  "model": {
+    "filename": "/pa/units/land/t_chimera/chimera_new.papa",
+    "animations": {
+      "idle": "/pa/units/land/t_chimera/chimera_new_anim_idle.papa",
+      "walk": "/pa/units/land/t_chimera/chimera_new_anim_run.papa",
+      "death": "/pa/units/land/t_chimera/chimera_new_anim_died.papa"
+    },
+    "animtree": "/pa/units/land/t_chimera/anim_tree.json",
+    "arrows": 5,
+    "walk_speed": 4
+  },
+  "death": {
+    "decals": [
+      "/pa/effects/specs/scorch_titan_01.json"
+    ]
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
+      "aim_bone": "bone_pitch_f.l",
+      "muzzle_bone": "socket_muzzle_f.l",
+      "record_index": 0,
+      "fire_event": "fired0"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
+      "aim_bone": "bone_pitch_f.r",
+      "muzzle_bone": "socket_muzzle_f.r",
+      "record_index": 1,
+      "fire_event": "fired1"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
+      "aim_bone": "bone_pitch_b.l",
+      "muzzle_bone": "socket_muzzle_b.l",
+      "record_index": 2,
+      "fire_event": "fired2"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
+      "aim_bone": "bone_pitch_b.r",
+      "muzzle_bone": "socket_muzzle_b.r",
+      "record_index": 3,
+      "fire_event": "fired3"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+      "aim_bone": "bone_pitch_f.l",
+      "muzzle_bone": "socket_muzzle_f.l",
+      "record_index": 0,
+      "fire_event": "fired0"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+      "aim_bone": "bone_pitch_f.r",
+      "muzzle_bone": "socket_muzzle_f.r",
+      "record_index": 1,
+      "fire_event": "fired1"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+      "aim_bone": "bone_pitch_b.l",
+      "muzzle_bone": "socket_muzzle_b.l",
+      "record_index": 2,
+      "fire_event": "fired2"
+    },
+    {
+      "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+      "aim_bone": "bone_pitch_b.r",
+      "muzzle_bone": "socket_muzzle_b.r",
+      "record_index": 3,
+      "fire_event": "fired3"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/Titan_Complete"
+    },
+    "died": {
+      "audio_cue": "",
+      "effect_spec": "",
+      "effect_scale": 1.0
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+      "effect_spec": "/pa/units/land/t_chimera/muzzle_flash.pfx socket_muzzle_f.l"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+      "effect_spec": "/pa/units/land/t_chimera/muzzle_flash.pfx socket_muzzle_f.r"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+      "effect_spec": "/pa/units/land/t_chimera/muzzle_flash.pfx socket_muzzle_b.l"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+      "effect_spec": "/pa/units/land/t_chimera/muzzle_flash.pfx socket_muzzle_b.r"
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/titan/bot"
+    }
+  },
+  "selection_icon": {
+    "diameter": 50
+  },
+  "TEMP_texelinfo": 9.31488,
+  "mesh_bounds": [
+    27,
+    30,
+    20
+  ],
+  "headlights": [],
+  "lamps": []
+}

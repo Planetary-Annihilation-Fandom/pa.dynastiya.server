@@ -9,3 +9,11 @@ The desert and lava Lite definitions retain their terrain composition but use th
 ## Legion Expansion
 
 The Legion units, AI build plans and the changes to standard units are from Legion Expansion 1.33.1-124674 by nicb1, Crembels, KillerKiwiJuice, Anonemous2, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall and xankar: https://github.com/Legion-Expansion/Legion-Expansion. They are used unchanged under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (https://creativecommons.org/licenses/by-nc-sa/4.0/). The client repository contains the assets and interface.
+
+## Exiles
+
+Exiles 0.8.5.3.3 by NikolaMX and BOIYOUSAYWHAT: https://github.com/NikolaMX/Exiles-Faction. The source MIT license is retained in `LICENSE.Exiles`. Units, models, textures, effects, strategic icons and AI data are integrated into Dynastiya; the original server and client mods are not required. Shared standard-unit data is merged with Legion.
+
+Exiles/Legion interception compatibility is adapted from Faction Compatibility Mod 1.9 by Ferretmaster (https://github.com/Ferret-Master/Commander-Merger), under CC BY-NC-SA 4.0; see `LICENSE.FactionCompatibility`. Only the relevant target lists are merged, preserving existing weapon settings.
+
+Broken source effect paths are corrected; unavailable animations fall back to the model bind pose. Exiles copies of shared ammunition use private paths to preserve existing MLA/Legion balance, while interception target lists recognize both variants. The original WIP orbital launcher requires `Custom58` orbital units, none of which are supplied by Exiles; its original build filter is preserved.
