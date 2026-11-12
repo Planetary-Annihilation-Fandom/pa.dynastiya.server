@@ -17,3 +17,9 @@ Exiles 0.8.5.3.3 by NikolaMX and BOIYOUSAYWHAT: https://github.com/NikolaMX/Exil
 Exiles/Legion interception compatibility is adapted from Faction Compatibility Mod 1.9 by Ferretmaster (https://github.com/Ferret-Master/Commander-Merger), under CC BY-NC-SA 4.0; see `LICENSE.FactionCompatibility`. Only the relevant target lists are merged, preserving existing weapon settings.
 
 Broken source effect paths are corrected; unavailable animations fall back to the model bind pose. Exiles copies of shared ammunition use private paths to preserve existing MLA/Legion balance, while interception target lists recognize both variants. The orbital launcher retains its original build filter (`Orbital & FactoryBuild & Basic & Custom58`) and uses the standard MLA orbital units supplied by Titans.
+
+## Bug Faction
+
+Bug Faction 1.40 by Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch and Quildtide: https://github.com/Ferret-Master/Bug-Faction. The source MIT license is retained in `LICENSE.Bugs`. Units, research, models, effects, AI, strategic icons, audio and commander artwork are integrated; the original mods are not required. Lobby frames, player icons and build tabs register with the shared faction module. Research is applied while constructing build sets, without delayed slot mutations.
+
+Missing source effect and model references are repaired. Animation adapters preserve available clips and omit references to clips or skeleton controls absent from the shipped meshes. The source menu theme switcher and external FloatZone dependency are replaced by the shared overview and research dialog. Interception targets are merged with existing MLA/Legion defenses, using the already integrated Faction Compatibility license.

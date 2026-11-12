@@ -1,0 +1,715 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Orbital Fabber",
+      "to_build": "BugOrbitalFab",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 199,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalFab"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Construction & Advanced - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "SafePlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInCelestialTransit",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Orbital Radar",
+      "to_build": "BugOrbitalRadar",
+      "instance_count": 1,
+      "priority": 100,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalRadar"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Advanced - Structure",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Orbital Radar - Pri",
+      "to_build": "BugOrbitalRadar",
+      "instance_count": 1,
+      "priority": 102,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Orbital Radar - Other planet",
+      "to_build": "BugOrbitalRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 199,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Seeker",
+      "to_build": "Seeker",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 100,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 15
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Seeker - Threat",
+      "to_build": "Seeker",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 200,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Seeker w/ Vision",
+      "to_build": "SeekerVision",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 100,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 15
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Seeker w/ Vision - Threat",
+      "to_build": "SeekerVision",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 200,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Chomper",
+      "to_build": "Chomper",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter & Advanced & Mobile",
+            "compare0": "<",
+            "value0": 15
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Chomper - Threat",
+      "to_build": "Chomper",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 205,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced & Mobile",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter & Advanced & Mobile",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Tyrant",
+      "to_build": "Tyrant",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Orbital & Heavy & LaserPlatform",
+            "unit_type_string1": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Laser Platform",
+      "to_build": "BugLaserPlatform",
+      "instance_count": 1,
+      "priority": 195,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & LaserPlatform - Heavy",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & LaserPlatform) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Orbital Lander",
+      "to_build": "BugOrbitalLander",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 111,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Advanced Orbital Radar",
+      "to_build": "BugAdvancedOrbitalRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 196,
+      "builders": [
+        "AnyBugFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAdvancedOrbitalRadar"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Advanced - Structure",
+            "compare0": "<",
+            "value0": 250
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Radar) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAdvancedOrbitalRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Radar) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    }
+  ]
+}
