@@ -27,7 +27,9 @@
     "/pa/units/land/l_bot_aa/l_bot_aa_ammo.json",
     "/pa/units/land/l_air_defense_adv/l_air_defense_adv_ammo.json",
     "/pa/units/air/l_fighter_adv/l_fighter_adv_rocket_ammo.json",
-    "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json"
+    "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
+    "/pa/units/air/bug_fighter/bug_fighter_ammo.json",
+    "/pa/units/air/bug_fighter_adv/bug_fighter_adv_ammo.json"
   ],
   "target_layers": [
     "WL_Air",

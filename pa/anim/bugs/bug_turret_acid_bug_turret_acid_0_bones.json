@@ -1,0 +1,29 @@
+{
+  "blend_root": {
+    "type": "aim_blend",
+    "aim_bone_root": "bone_turret",
+    "node_aim_down": {
+      "type": "bind_pose"
+    },
+    "node_aim_neutral": {
+      "type": "bind_pose"
+    },
+    "node_aim_up": {
+      "type": "bind_pose"
+    },
+    "child": {
+      "type": "bind_pose"
+    }
+  },
+  "skeleton_controls": [
+    {
+      "type": "fader",
+      "lerp_func": "is_active",
+      "child": {
+        "type": "procedural_aim",
+        "rotation_bone": "bone_turret",
+        "rotation_axis": "z"
+      }
+    }
+  ]
+}

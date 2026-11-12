@@ -1,0 +1,85 @@
+{
+  "platoon_templates": {
+    "Bugs_Air_Scout": {
+      "units": [
+        {
+          "unit_types": "(Air & Basic & Mobile & (Fighter | Gunship)) & Custom2",
+          "max_count": 1
+        }
+      ]
+    },
+    "Bugs_Land_Scout": {
+      "units": [
+        {
+          "unit_types": "(Land & Scout & Mobile) & Custom2",
+          "max_count": 1
+        }
+      ]
+    },
+    "Bugs_Orbital_Radar": {
+      "units": [
+        {
+          "unit_types": "(Orbital & (Recon | Scout) & Mobile - Structure) & Custom2",
+          "max_count": 1
+        }
+      ]
+    },
+    "Bugs_Orbital_Fighter_Attack": {
+      "units": [
+        {
+          "unit_types": "(Orbital & Fighter & Mobile) & Custom2",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Bugs_Orbital_Titan_Attack": {
+      "units": [
+        {
+          "unit_types": "(Orbital & Titan & Mobile) & Custom2",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "(Orbital & Fighter & Mobile) & Custom2",
+          "min_count": 0,
+          "max_count": 15,
+          "squad": "Escort"
+        }
+      ]
+    },
+    "Bugs_Orbital_Laser_Attack": {
+      "units": [
+        {
+          "unit_types": "(Orbital & LaserPlatform & Mobile - Titan) & Custom2",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "(Orbital & Fighter & Mobile) & Custom2",
+          "min_count": 0,
+          "max_count": 8,
+          "squad": "Escort"
+        }
+      ]
+    },
+    "Bugs_Orbital_Offense_Transfer": {
+      "units": [
+        {
+          "unit_types": "(Orbital & (Fighter | LaserPlatform) & Mobile) & Custom2",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Bugs_UnitCannon": {
+      "units": [
+        {
+          "unit_types": "(Structure & Artillery & Factory - Tank) & Custom2",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    }
+  }
+}

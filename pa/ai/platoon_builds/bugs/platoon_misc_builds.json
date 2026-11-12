@@ -1,0 +1,21 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs Unit Cannon Platoon",
+      "to_build": "Bugs_UnitCannon",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Structure & Artillery & Factory - Tank) & Custom2",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "UnitCannon"
+    }
+  ]
+}
