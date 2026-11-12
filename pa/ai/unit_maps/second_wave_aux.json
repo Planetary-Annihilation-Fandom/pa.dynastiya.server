@@ -1,0 +1,16 @@
+{
+    "unit_map": {
+        "AnyMLAAdvancedFabber": {
+            "unit_types": "(Fabber & (Advanced | Debug)) & Custom58 - Orbital"
+        },
+        "AnyMLABasicFabber": {
+            "unit_types": "(Fabber & (Basic | Debug)) & Custom58 - Orbital"
+        },
+        "MLACommander": {
+            "unit_types": "Commander & Custom58"
+        },
+        "MLASupportCommander": {
+            "spec_id": "/pa/units/land/bot_support_commander/bot_support_commander.json"
+        }
+    }
+}

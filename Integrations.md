@@ -23,3 +23,9 @@ Broken source effect paths are corrected; unavailable animations fall back to th
 Bug Faction 1.40 by Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch and Quildtide: https://github.com/Ferret-Master/Bug-Faction. The source MIT license is retained in `LICENSE.Bugs`. Units, research, models, effects, AI, strategic icons, audio and commander artwork are integrated; the original mods are not required. Lobby frames, player icons and build tabs register with the shared faction module. Research is applied while constructing build sets, without delayed slot mutations.
 
 Missing source effect and model references are repaired. Animation adapters preserve available clips and omit references to clips or skeleton controls absent from the shipped meshes. The source menu theme switcher and external FloatZone dependency are replaced by the shared overview and research dialog. Interception targets are merged with existing MLA/Legion defenses, using the already integrated Faction Compatibility license.
+
+## Second Wave Expansion
+
+Second Wave Expansion 0.16.1 by Anonemous2, billthebluebot, Taiga, Quitch, Quildtide, Ferretmaster, Tatarstan and DrWondertainment: https://github.com/Anonemous2/pa.mla.unit.addon, https://forums.planetaryannihilation.com/threads/wip-casual-mla-unit-addon.73484/. The source does not include a license file. The MLA, Legion and Bugs units, ammunition, changes to the anti-air defenses and AI build plans are integrated; the original mod is not required. The client repository contains the textures, strategic icons and build bar positions.
+
+Units are added to the existing unit list, and Second Wave missiles are added to the Legion shield interception targets. The `stalker` and `swordfish` strategic icons are renamed `sw_stalker` and `sw_swordfish` to avoid the Exiles icons of the same name. The Legion advanced storage death weapon path is corrected, and two unreferenced skirt specifications with broken paths are removed.

@@ -1,0 +1,9 @@
+{
+  "blend_root": {
+    "type": "walk",
+    "node_idle": { "type": "bind_pose" },
+    "node_walk": { "type": "playback", "anim_name": "drive" }
+  },
+  "skeleton_controls": [
+  ]
+}
