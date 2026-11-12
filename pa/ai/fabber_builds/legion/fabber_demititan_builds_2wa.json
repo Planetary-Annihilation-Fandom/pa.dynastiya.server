@@ -1,0 +1,66 @@
+{
+    "build_list": [
+        {
+            "name": "2w_l_Beowulf",
+            "to_build": "2w_l_Beowulf",
+            "instance_count": 1,
+            "min_num_assisters": 2,
+            "max_num_assisters": 15,
+            "shared_instance_count": "Titan",
+            "priority": 481,
+            "builders": [
+                "LegionBotAdvancedFabber",
+                "LegionOrbitalBasicFabber",
+                "LegionBotAdvancedSupportCommander"
+            ],
+            "build_conditions": [
+                [
+                    {
+                        "test_type": "EnemySurfacePresenceOnPlanet",
+                        "boolean": true
+                    },
+                    {
+                        "test_type": "CanAffordBuildDemand"
+                    },
+                    {
+                        "test_type": "UnitCountOnPlanet",
+                        "unit_type_string0": "Factory - Orbital",
+                        "compare0": ">=",
+                        "value0": 1
+                    },
+                    {
+                        "test_type": "HaveSeenEnemyUnits",
+                        "unit_type_string0": "Land & Titan",
+                        "boolean": true
+                    },
+                    {
+                        "test_type": "PlanetHighestEnemyArmyThreat",
+                        "string0": "Land",
+                        "compare0": ">",
+                        "value0": 50000
+                    },
+                    {
+                        "test_type": "PlanetHighestEnemyArmyThreat",
+                        "string0": "AntiSurface",
+                        "compare0": ">",
+                        "value0": 1600
+                    },
+                    {
+                        "test_type": "CanFindPlaceToBuild",
+                        "string0": "2w_l_Beowulf"
+                    }
+                ]
+            ],
+            "placement_rules": {
+                "buffer": 5,
+                "placement_type": "FromMainBaseCenter",
+                "threat": {
+                    "influence_type": "AntiSurface",
+                    "compare_type": "<",
+                    "radius": 10,
+                    "value": 50
+                }
+            }
+        }
+    ]
+}
