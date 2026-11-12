@@ -12,4 +12,6 @@
 
 Режим показа панели (`update`, `replace`, `present`) выбирай по комментариям в клиентских [`presentation.js`](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client/blob/main/ui/mods/dynastiya.panel_lifecycle/presentation.js) для окон HUD и [`surface.js`](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client/blob/main/ui/mods/dynastiya.panel_lifecycle/surface.js) для лобби, меню и настроек.
 
+Данные одного матча храни через `dynastiyaMatchStorage`, а матч, армию, лобби и игрока получай через `dynastiyaIds` из клиентского [`dynastiya.context`](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client/tree/main/ui/mods/dynastiya.context). Хранилище само отделяет матчи и удаляет данные прошлого, поэтому проверять идентификатор лобби в своём коде не нужно.
+
 Результат и проверку описывай в сообщении коммита и в комментарии при закрытии issue. Отдельные отчёты и журналы в `docs/` не ведутся.
