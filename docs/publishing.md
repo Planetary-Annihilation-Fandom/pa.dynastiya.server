@@ -1,62 +1,51 @@
-# Публикация под идентификаторами Biomes Lite
+# Публикация «Династии»
 
-«Династия» выходит к игрокам под уже одобренными id `com.pa.biomes.lite.server` и `com.pa.biomes.lite.client`: новый id потребовал бы повторной модерации. Игра раз в день, около 13:00 МСК, скачивает эти моды из `main` публичных репозиториев [com.pa.biomes.lite.server](https://github.com/Planetary-Annihilation-Fandom/com.pa.biomes.lite.server) и [com.pa.biomes.lite.client](https://github.com/Planetary-Annihilation-Fandom/com.pa.biomes.lite.client). До этого времени новую версию можно проверить только локально.
+Мод публикуется из `main` собственных публичных репозиториев:
 
-Разработка идёт только в репозиториях «Династии». Репозитории биомов служат точкой публикации: веток в них нет, изменения приходят только скриптом. Публикуй только по команде пользователя «опубликуй».
+| Часть | Репозиторий | Идентификатор |
+|---|---|---|
+| Сервер | [pa.dynastiya.server](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server) | `com.pa.dynastiya.server` |
+| Клиент | [pa.dynastiya.client](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client) | `com.pa.dynastiya.client` |
 
-## Перенос
+Biomes Lite больше не используется как точка публикации. Не переноси туда изменения и не подменяй идентификаторы «Династии». Старые клоны в `../publish/` не участвуют в выпуске; скрипт `tools/publish-biomes.cjs` удалён. Выпускай новую версию только по команде пользователя «опубликуй».
 
-Из корня серверного репозитория:
+## Первое добавление в Community Mods
 
-```powershell
-node tools/publish-biomes.cjs
-```
+Собственные идентификаторы требуют отдельного добавления в каталог: прежнее одобрение Biomes Lite на них не переносится. По [инструкции автора шаблона модов](https://github.com/Quitch/New-GW-Cards#readme), отправь ссылки на оба репозитория в канал `#new-mod-submissions` официального Discord PA и дождись добавления в Community Mods. Если моды уже добавлены под собственными ID, повторная заявка не нужна.
 
-Скрипт берёт `origin/main` обоих репозиториев «Династии», клонирует при необходимости репозитории биомов в `../publish/` (рядом с `server/` и `client/`) и заменяет их содержимое целиком. Затем он вносит коррекции:
+Источники ZIP для каталога:
 
-- в `modinfo.json` заменяет `identifier`, id в `companions`, `dependencies` и `conflicts`, убирает `hidden`;
-- убирает оба id Biomes Lite из `ui/mods/dynastiya.mod_conflicts/conflicts.js`, иначе «Династия» найдёт конфликт сама с собой;
-- останавливается, если id «Династии» остались в `modinfo.json`, `ui/` или `pa/`.
+- Сервер: `https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/archive/refs/heads/main.zip`.
+- Клиент: `https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client/archive/refs/heads/main.zip`.
 
-Результат коммитится в локальный `main` биомов. Скрипт не пушит и не ставит теги. Он откажется работать, если в клоне есть незакоммиченные или неотправленные изменения.
+В `modinfo.json` сохраняй собственные `identifier` и `github`, а в серверном `companions` указывай `com.pa.dynastiya.client`. Клиентский `hidden: true` оставляет вспомогательную часть скрытой из общего списка; её подключает серверный мод через `companions`.
 
-Каталоги `ui/mods/dynastiya.*` не переименовываются: игра загружает их по путям из `modinfo.json`, это подтверждено в игре при первой публикации.
+Обе части используют [общие Discussions](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/discussions) в поле `forum` и [GIF-аватар](https://raw.githubusercontent.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/main/assets/avatar.gif) в поле `icon`. Файл аватара лежит в `assets/avatar.gif` серверного репозитория; сначала отправляй его на GitHub и проверяй raw-ссылку, затем обновляй манифесты.
 
-## Проверка
+## Подготовка и проверка выпуска
 
-1. Просмотри `git show --stat HEAD` и дифф `modinfo.json` в обоих клонах. Проверь `display_name`, `description`, `version`, `date` и `build`; версию изменённой части повышай в репозитории «Династии» до переноса.
-2. Запусти тестовый профиль с опубликованными копиями из корня `pa`:
+1. Влей готовые изменения в `main` соответствующих репозиториев. В релизном коммите повысь `version` каждой изменённой части по правилам `AGENTS.md` и обнови `date`; версии клиента и сервера независимы. Проверь `display_name`, `description`, `build`, ссылки и согласованность `companions`.
+2. Из корня `pa` запусти тестовый профиль с обычными исходниками «Династии»:
 
    ```powershell
-   node mods/dynastiya/tools/resources/launch-test.cjs host --lobby --client mods/dynastiya/publish/com.pa.biomes.lite.client --server mods/dynastiya/publish/com.pa.biomes.lite.server
+   node mods/dynastiya/tools/resources/launch-test.cjs host --lobby
    ```
 
-   Первый запуск со сменой id только включает моды; если проверка стилей упала по таймауту, закрой клиент и запусти ещё раз. В выводе должны быть `ids` биомов и `dynastiyaEnabled: true`.
-3. В лобби должны быть раздел `LOBBY PLANET GENERATION` и серверный мод `Dynastiya Server`, без окна конфликтующих модов; кнопка `GENERATE PLANET` создаёт систему.
+   В выводе должны быть собственные ID «Династии» и `dynastiyaEnabled: true`. Проверь загрузку обеих частей, отсутствие окна конфликтов и создание системы кнопкой `GENERATE PLANET` в разделе `LOBBY PLANET GENERATION`.
+3. Просмотри итоговый коммит и убедись, что номер версии ещё не занят тегом. Отметь выпуск тегом версии соответствующей части и отправь `main` с этим тегом. Пример из корня `pa`:
 
-После проверки обычный запуск без `--client`/`--server` возвращает профиль к id «Династии».
+   ```powershell
+   git -C mods/dynastiya/server tag v<версия-сервера>
+   git -C mods/dynastiya/server push origin main refs/tags/v<версия-сервера>
+   git -C mods/dynastiya/client tag v<версия-клиента>
+   git -C mods/dynastiya/client push origin main refs/tags/v<версия-клиента>
+   ```
 
-## Теги и отправка
+   Для неизменённой части новый тег не создавай. Отправка в `main` меняет ZIP, который забирает каталог; тег фиксирует проверенный выпуск.
+4. После обновления каталога проверь в Community Mods собственные ID, версии, аватар и ссылку на Discussions. Push на GitHub сам по себе не подтверждает обновление каталога; точное время индексации заранее не гарантируется.
 
-Опубликованный коммит отмечается тегом версии из `modinfo.json` соответствующей части:
-
-```powershell
-git -C ../publish/com.pa.biomes.lite.server tag v<версия сервера>
-git -C ../publish/com.pa.biomes.lite.client tag v<версия клиента>
-git -C ../publish/com.pa.biomes.lite.server push origin main --tags
-git -C ../publish/com.pa.biomes.lite.client push origin main --tags
-```
-
-Если версия части не менялась, а содержимое изменилось, сначала повысь версию в репозитории «Династии»: тег с тем же именем уже указывает на прошлую публикацию.
+Игрокам со старой установкой под ID Biomes Lite нужно отключить обе старые части и установить серверную «Династию» из каталога. Это другие идентификаторы, поэтому обычное обновление Biomes Lite не переключит установку на новый мод. Biomes Lite остаются в списке конфликтов «Династии».
 
 ## Откат
 
-Последнее состояние оригинальных биомов отмечено тегом `v1.2.2-up0`. Чтобы вернуть прошлую публикацию, создай в `main` коммит с содержимым нужного тега и отправь его без переписывания истории:
-
-```powershell
-git -C ../publish/com.pa.biomes.lite.client restore --source v<версия> --staged --worktree -- .
-git -C ../publish/com.pa.biomes.lite.client commit -m "Откат к v<версия>"
-git -C ../publish/com.pa.biomes.lite.client push origin main
-```
-
-Откатывай обе части согласованно. Игроки получат откат при следующей ежедневной загрузке.
+Откатывай изменения отдельным коммитом в собственном репозитории без переписывания истории. Для уже опубликованной версии используй `git revert` нужных коммитов, затем повысь версию и дату и проведи обычный выпуск с новым тегом: старый тег не перемещай. Если изменения затрагивали совместимость клиента и сервера, откатывай обе части согласованно. Проверь получение исправленного выпуска через Community Mods.
