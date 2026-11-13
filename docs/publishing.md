@@ -55,7 +55,7 @@ git -C mods/dynastiya/server push -u origin dev
 - Сервер: `https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/archive/refs/heads/main.zip`.
 - Клиент: `https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client/archive/refs/heads/main.zip`.
 
-В `modinfo.json` сохраняй собственные `identifier` и `github`, а в серверном `companions` указывай `com.pa.dynastiya.client`. Клиентский `hidden: true` оставляет вспомогательную часть скрытой из общего списка; её подключает серверный мод через `companions`.
+В `modinfo.json` сохраняй собственные `identifier` и `github`, а в серверных `dependencies` и `companions` указывай `com.pa.dynastiya.client`. Зависимость устанавливает и включает клиент вместе с сервером, чтобы его меню работало до подключения к матчу; `companions` подключает его при входе в игру и просмотре повтора, а клиентский `hidden: true` скрывает вспомогательную часть из общего списка.
 
 Обе части используют [общие Discussions](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/discussions) в поле `forum` и [GIF-аватар](https://raw.githubusercontent.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/main/assets/avatar.gif) в поле `icon`. Файл аватара лежит в `assets/avatar.gif` серверного репозитория; сначала отправляй его на GitHub и проверяй raw-ссылку, затем обновляй манифесты.
 
