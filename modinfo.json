@@ -13,7 +13,7 @@
   "dependencies": [
     "com.pa.dynastiya.client"
   ],
-  "date": "2026-11-11",
+  "date": "2026-11-13",
   "description": "A large-scale overhaul focused on a cohesive, complete gameplay experience.",
   "display_name": "Dynastiya Server",
   "forum": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/discussions",
@@ -22,5 +22,5 @@
   "identifier": "com.pa.dynastiya.server",
   "signature": "not yet implemented",
   "titansOnly": true,
-  "version": "0.1.3"
+  "version": "0.1.4"
 }

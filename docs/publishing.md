@@ -7,7 +7,7 @@
 | Сервер | [pa.dynastiya.server](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server) | `com.pa.dynastiya.server` |
 | Клиент | [pa.dynastiya.client](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client) | `com.pa.dynastiya.client` |
 
-Выпускай новую версию только по команде пользователя «опубликуй».
+Выпускай новую версию по явной команде пользователя опубликовать изменения или обновить `main`. Любое обновление `main` оформляй выпуском: повысь `version`, установи дату выпуска в `date` и поставь аннотированный тег `vX.Y.Z`; отправляй `main`, синхронизированный `dev` и тег одним атомарным push.
 
 ## Ветки разработки
 
