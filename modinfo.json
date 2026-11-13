@@ -1,6 +1,6 @@
 {
   "author": "blubloobu",
-  "build": "124685",
+  "build": "124715",
   "category": [
     "titans",
     "gameplay",
@@ -10,6 +10,9 @@
     "com.pa.dynastiya.client"
   ],
   "context": "server",
+  "dependencies": [
+    "com.pa.dynastiya.client"
+  ],
   "date": "2026-11-11",
   "description": "A large-scale overhaul focused on a cohesive, complete gameplay experience.",
   "display_name": "Dynastiya Server",
