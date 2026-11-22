@@ -55,7 +55,9 @@ git -C mods/dynastiya/server push -u origin dev
 - Сервер: `https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/archive/refs/heads/main.zip`.
 - Клиент: `https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.client/archive/refs/heads/main.zip`.
 
-В `modinfo.json` сохраняй собственные `identifier` и `github`, а в серверных `dependencies` и `companions` указывай `com.pa.dynastiya.client`. Зависимость устанавливает и включает клиент вместе с сервером, чтобы его меню работало до подключения к матчу; `companions` подключает его при входе в игру и просмотре повтора, а клиентский `hidden: true` скрывает вспомогательную часть из общего списка.
+В `modinfo.json` сохраняй собственные `identifier` и `github`, а в серверных `dependencies` и `companions` указывай `com.pa.dynastiya.client`. Зависимость устанавливает и включает клиент вместе с сервером. Поле `companions` подключает клиент при входе в игру и просмотре повтора, а `hidden: true` скрывает его из общего списка.
+
+Серверный манифест указывает серверные части Legion Expansion, Exiles Faction и Second Wave Expansion. Клиентский манифест указывает их клиентские части. Community Mods загружает и обновляет эти моды из каталога.
 
 Обе части используют [общие Discussions](https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/discussions) в поле `forum` и [GIF-аватар](https://raw.githubusercontent.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/main/assets/avatar.gif) в поле `icon`. Файл аватара лежит в `assets/avatar.gif` серверного репозитория; сначала отправляй его на GitHub и проверяй raw-ссылку, затем обновляй манифесты.
 
@@ -69,7 +71,7 @@ git -C mods/dynastiya/server push -u origin dev
    node mods/dynastiya/tools/resources/launch-test.cjs host --lobby
    ```
 
-   В выводе должны быть собственные ID «Династии» и `dynastiyaEnabled: true`. Проверь загрузку обеих частей, отсутствие окна конфликтов и создание системы кнопкой `GENERATE PLANET` в разделе `LOBBY PLANET GENERATION`.
+   В выводе должны быть собственные ID «Династии», `dynastiyaEnabled: true` и список зависимостей. В лобби проверь выбор командиров Legion и Exiles, а в матче проверь доступность построек Second Wave.
 4. Просмотри итоговые изменения и убедись после `fetch --tags`, что выбранный номер ещё не занят локальным или удалённым тегом. В каждой изменённой части влей проверенный `dev` в `main` через `--no-ff`, затем поставь на полученный коммит аннотированный тег версии. Пример для сервера из корня `pa`:
 
    ```powershell

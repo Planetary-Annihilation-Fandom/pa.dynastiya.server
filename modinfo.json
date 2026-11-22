@@ -3,18 +3,20 @@
   "build": "124715",
   "category": [
     "titans",
-    "gameplay",
-    "overhaul"
+    "gameplay"
   ],
   "companions": [
     "com.pa.dynastiya.client"
   ],
   "context": "server",
   "dependencies": [
-    "com.pa.dynastiya.client"
+    "com.pa.dynastiya.client",
+    "com.pa.legion-expansion-server",
+    "com.pa.nik.exiles",
+    "pa.mla.unit.addon"
   ],
-  "date": "2026-11-13",
-  "description": "A large-scale overhaul focused on a cohesive, complete gameplay experience.",
+  "date": "2026-11-22",
+  "description": "Play Legion Expansion, Exiles Faction, and Second Wave Expansion together in Planetary Annihilation: TITANS.",
   "display_name": "Dynastiya Server",
   "forum": "https://github.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/discussions",
   "icon": "https://raw.githubusercontent.com/Planetary-Annihilation-Fandom/pa.dynastiya.server/main/assets/avatar.gif",
@@ -22,5 +24,5 @@
   "identifier": "com.pa.dynastiya.server",
   "signature": "not yet implemented",
   "titansOnly": true,
-  "version": "0.1.4"
+  "version": "1.0.0"
 }
