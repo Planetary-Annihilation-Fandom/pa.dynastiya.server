@@ -1,0 +1,87 @@
+{
+  "base_spec": "/pa/units/commanders/raptor_base/raptor_base.json",
+  "display_name": "Раптор",
+  "description": "Мобильный командир-диверсант. Высокая скорость, встроенная глушилка радаров вокруг командира, уменьшенное поле зрения. Основное оружие скорострельное, но маломощное — одного попадания хватает только на бум-бота. Дополнительное оружие создаёт иллюзию-двойника. Строительная рука потребляет почти вдвое больше энергии, но строит быстрее. Появляется с заряженным комплектом.",
+  "catalog_object_name": "PALegendsRaptor",
+  "custom": true,
+  "max_health": 11000,
+  "client": {
+    "ui": {
+      "image": "/pa/units/commanders/palegends_icons/raptor.png",
+      "thumb_image": "/pa/units/commanders/palegends_icons/raptor.png",
+      "profile_image": "/pa/units/commanders/palegends_icons/raptor.png"
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_raptor.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/tools/palegends/raptor_primary.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/tools/palegends/raptor_illusion.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    }
+  ],
+  "navigation": {
+    "move_speed": 13,
+    "turn_speed": 220,
+    "acceleration": 80
+  },
+  "consumption": {
+    "energy": 100
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 110
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 110
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar_jammer",
+          "shape": "capsule",
+          "radius": 100,
+          "uses_energy": true
+        },
+        {
+          "layer": "celestial",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 1
+        }
+      ]
+    }
+  }
+}

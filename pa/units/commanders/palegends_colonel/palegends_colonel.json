@@ -1,0 +1,19 @@
+{
+  "base_spec": "/pa_ex1/units/land/bot_support_commander/bot_support_commander.json",
+  "display_name": "Колонел",
+  "description": "Мини-форма командира. Не имеет классовых способностей, зато позволяет командиру быть сразу в нескольких местах: строит передовые сооружения и держится в бою. Производится в продвинутом танковом заводе (Т2).",
+  "build_metal_cost": 6000,
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Vehicle",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_SupportCommander",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Amphibious"
+  ]
+}

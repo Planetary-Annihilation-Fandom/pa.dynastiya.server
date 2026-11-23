@@ -1,0 +1,57 @@
+{
+  "base_spec": "/pa/units/commanders/imperial_base/imperial_base.json",
+  "display_name": "Империал",
+  "description": "Крепкий командир-полководец. Броня усилена — здоровья в 2.5 раза больше, чем у Базы. Большая вместимость ресурсов и повышенная выработка энергии. Основное оружие стреляет только полным залпом из четырёх зарядов, зато каждый заряд равен по урону здоровью базового танка. Дополнительное оружие призывает слуг: они живут ограниченное время и намного слабее командира. Строительная рука — самая медленная, но почти не требует энергии.",
+  "catalog_object_name": "PALegendsImperial",
+  "custom": true,
+  "max_health": 31250,
+  "client": {
+    "ui": {
+      "image": "/pa/units/commanders/palegends_icons/imperial.png",
+      "thumb_image": "/pa/units/commanders/palegends_icons/imperial.png",
+      "profile_image": "/pa/units/commanders/palegends_icons/imperial.png"
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_imperial.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/tools/palegends/imperial_primary.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true,
+      "projectiles_per_fire": 4
+    },
+    {
+      "spec_id": "/pa/tools/palegends/imperial_servants.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    }
+  ],
+  "storage": {
+    "energy": 90000,
+    "metal": 3000
+  },
+  "production": {
+    "energy": 4000,
+    "metal": 20
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "base_spec": "/pa_ex1/units/orbital/titan_orbital/titan_orbital.json",
+  "display_name": "Гелиос",
+  "description": "Суперформа Квада. Приняв вооружение нуль-формы, Гелиос превращает свои лучевые установки в ракетные и обрушивает почти бесконечный поток ракет. Сохраняет телепорт и умеет строить орбитальные объекты. Производится орбитальными фабрикаторами.",
+  "max_health": 20000,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist"
+  ],
+  "buildable_types": "FabOrbBuild",
+  "tools": [
+    {
+      "spec_id": "/pa/tools/palegends/helios_primary.json",
+      "aim_bone": "socket_muzzle02",
+      "muzzle_bone": [
+        "socket_muzzle01",
+        "socket_muzzle02",
+        "socket_muzzle03",
+        "socket_muzzle04"
+      ],
+      "projectiles_per_fire": 8
+    },
+    {
+      "spec_id": "/pa/tools/palegends/helios_primary.json",
+      "aim_bone": "socket_muzzle06",
+      "muzzle_bone": [
+        "socket_muzzle05",
+        "socket_muzzle06",
+        "socket_muzzle07",
+        "socket_muzzle08"
+      ],
+      "projectiles_per_fire": 8
+    },
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_helios.json",
+      "aim_bone": "bone_root"
+    }
+  ]
+}

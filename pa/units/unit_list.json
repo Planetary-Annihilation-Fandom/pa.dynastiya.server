@@ -1,0 +1,15 @@
+{
+  "units": [
+    "/pa/units/commanders/palegends_raptor/palegends_raptor.json",
+    "/pa/units/commanders/palegends_tank/palegends_tank.json",
+    "/pa/units/commanders/palegends_quad/palegends_quad.json",
+    "/pa/units/commanders/palegends_imperial/palegends_imperial.json",
+    "/pa/units/commanders/palegends_illusion/palegends_illusion.json",
+    "/pa/units/commanders/palegends_servant/palegends_servant.json",
+    "/pa/units/commanders/palegends_colonel/palegends_colonel.json",
+    "/pa/units/palegends/palegends_zeus/palegends_zeus.json",
+    "/pa/units/palegends/palegends_atlas/palegends_atlas.json",
+    "/pa/units/palegends/palegends_helios/palegends_helios.json",
+    "/pa/units/palegends/palegends_uran/palegends_uran.json"
+  ]
+}

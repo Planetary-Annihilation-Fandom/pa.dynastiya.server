@@ -1,0 +1,58 @@
+{
+  "base_spec": "/pa/units/commanders/raptor_base/raptor_base.json",
+  "display_name": "Иллюзия Раптора",
+  "description": "Проекция Раптора. Наследует его скорость и корпус, но не может создавать другие иллюзии. Здоровье снижено, зрения нет — только встроенный радар, не зависящий от энергии. Строить не умеет, но может помогать в строительстве. Со временем рассеивается.",
+  "max_health": 3000,
+  "passive_health_regen": -20,
+  "buildable_types": "",
+  "build_metal_cost": 1000,
+  "production": {
+    "energy": 0,
+    "metal": 0
+  },
+  "storage": {
+    "energy": 0,
+    "metal": 0
+  },
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/ammo/palegends/illusion_death.json"
+  },
+  "teleportable": null,
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Amphibious",
+    "UNITTYPE_NoBuild"
+  ],
+  "navigation": {
+    "move_speed": 13,
+    "turn_speed": 220,
+    "acceleration": 80
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "underwater",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 150
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_illusion.json",
+      "aim_bone": "bone_turret"
+    }
+  ]
+}

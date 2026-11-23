@@ -1,0 +1,12 @@
+{
+  "base_spec": "/pa/ammo/missile_seeking/missile_seeking.json",
+  "display_name": "Ракета Гелиоса",
+  "damage": 250,
+  "splash_damage": 150,
+  "splash_radius": 15,
+  "full_damage_splash_radius": 5,
+  "initial_velocity": 180.0,
+  "max_velocity": 180.0,
+  "turn_rate": 360.0,
+  "lifetime": 4.0
+}

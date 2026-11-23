@@ -1,0 +1,8 @@
+{
+  "base_spec": "/pa/tools/commander_build_arm/commander_build_arm.json",
+  "construction_demand": {
+    "energy": 500,
+    "metal": 30
+  },
+  "auto_repair": true
+}

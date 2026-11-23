@@ -1,0 +1,28 @@
+{
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/ammo/palegends/imperial_round.json",
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "rate_of_fire": 0.6,
+  "max_range": 100,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 180,
+  "pitch_range": 40,
+  "auto_attack": true,
+  "idle_aim_delay": 3,
+  "target_priorities": [
+    "Mobile - Air",
+    "Mobile",
+    "Structure - Wall"
+  ],
+  "ammo_source": "energy",
+  "ammo_capacity": 4,
+  "ammo_demand": 2,
+  "ammo_per_shot": 4,
+  "carpet_wait_for_full_ammo": true,
+  "start_fully_charged": true
+}
