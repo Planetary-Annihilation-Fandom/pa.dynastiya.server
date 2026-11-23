@@ -1,0 +1,70 @@
+{
+  "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
+  "display_name": "Танк",
+  "description": "Крепкий командир переднего края. Медленнее всех, зато несёт генератор щита, накрывающий пространство вокруг. Основное оружие бьёт на самую малую дистанцию, но очень часто и с небольшим уроном по области. Дополнительное оружие — ремонтный импульс: он не наносит урон, а лечит юнитов в области применения, и союзных, и вражеских. Щит и ремонт вместе дорого обходятся по энергии, поэтому строительная рука Танка потребляет её очень мало. Появляется с заряженным комплектом.",
+  "catalog_object_name": "PALegendsTank",
+  "custom": true,
+  "max_health": 16000,
+  "client": {
+    "ui": {
+      "image": "/pa/units/commanders/palegends_icons/tank.png",
+      "thumb_image": "/pa/units/commanders/palegends_icons/tank.png",
+      "profile_image": "/pa/units/commanders/palegends_icons/tank.png"
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_tank.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/tools/palegends/tank_primary.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/tools/palegends/tank_repair_pulse.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    }
+  ],
+  "consumption": {
+    "energy": 150
+  },
+  "shield": {
+    "radius": 100,
+    "max_health": 8000,
+    "recharge_rate": 250,
+    "cooldown_time": 12,
+    "energy_demand": 300,
+    "recharge_requires_efficiency": true
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Amphibious",
+    "UNITTYPE_NoBuild",
+    "UNITTYPE_Shield"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "base_spec": "/pa_ex1/units/land/titan_vehicle/titan_vehicle.json",
+  "display_name": "Уран (Сигма)",
+  "description": "Суперформа Империала. Подвижная крепость с имперскими залпами, огромным запасом ресурсов и призывом трёх слуг. Сохраняет строительную руку. Производится орбитальными фабрикаторами.",
+  "max_health": 90000,
+  "storage": {
+    "energy": 120000,
+    "metal": 5000
+  },
+  "production": {
+    "energy": 4000,
+    "metal": 20
+  },
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "buildable_types": "CmdBuild & Custom58",
+  "tools": [
+    {
+      "spec_id": "/pa/tools/palegends/uran_primary.json",
+      "aim_bone": "socket_main_aim",
+      "muzzle_bone": [
+        "socket_main_muzzle01",
+        "socket_main_muzzle02",
+        "socket_main_muzzle03",
+        "socket_main_muzzle04"
+      ]
+    },
+    {
+      "spec_id": "/pa/tools/palegends/uran_servants.json",
+      "aim_bone": "socket_main_aim",
+      "muzzle_bone": [
+        "socket_main_muzzle01"
+      ],
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_uran.json",
+      "aim_bone": "bone_root"
+    }
+  ]
+}

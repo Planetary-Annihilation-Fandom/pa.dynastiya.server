@@ -1,0 +1,57 @@
+{
+  "base_spec": "/pa_ex1/units/land/titan_bot/titan_bot.json",
+  "display_name": "Атлас",
+  "description": "Суперформа Танка. Колосс с генератором щита и сейсмическим ударом; дополнительное оружие — ремонтный импульс, который лечит всех в области, и союзников, и врагов. Сохраняет строительную руку. Производится орбитальными фабрикаторами.",
+  "max_health": 75000,
+  "shield": {
+    "radius": 150,
+    "max_health": 20000,
+    "recharge_rate": 400,
+    "cooldown_time": 15,
+    "energy_demand": 500,
+    "recharge_requires_efficiency": true
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Titan",
+    "UNITTYPE_Important",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Amphibious",
+    "UNITTYPE_Shield"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "buildable_types": "CmdBuild & Custom58",
+  "tools": [
+    {
+      "spec_id": "/pa_ex1/units/land/titan_bot/titan_bot_tool_weapon_stomp.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    },
+    {
+      "spec_id": "/pa/tools/palegends/atlas_repair_pulse.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_atlas.json",
+      "aim_bone": "bone_root"
+    }
+  ]
+}

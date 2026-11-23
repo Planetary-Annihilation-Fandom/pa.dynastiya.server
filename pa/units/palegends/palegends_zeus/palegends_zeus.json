@@ -1,0 +1,81 @@
+{
+  "base_spec": "/pa_ex1/units/air/titan_air/titan_air.json",
+  "display_name": "Зевс",
+  "description": "Суперформа Раптора. Скорость и глушилка усилены, корпус стал заметно прочнее, а разряд молнии бьёт по площади. Сохраняет строительную руку, поэтому может заменить командира в бою. Производится орбитальными фабрикаторами.",
+  "max_health": 18000,
+  "navigation": {
+    "move_speed": 40,
+    "turn_speed": 60
+  },
+  "consumption": {
+    "energy": 300
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 220
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 220
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar_jammer",
+          "shape": "capsule",
+          "radius": 180,
+          "uses_energy": true
+        },
+        {
+          "layer": "celestial",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 1
+        }
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Bomber",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Air",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Titan",
+    "UNITTYPE_Important",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_RadarJammer"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "buildable_types": "CmdBuild & Custom58",
+  "tools": [
+    {
+      "spec_id": "/pa_ex1/units/air/titan_air/titan_air_tool_weapon.json",
+      "aim_bone": "socket_muzzle_center",
+      "muzzle_bone": [
+        "socket_muzzle_center"
+      ]
+    },
+    {
+      "spec_id": "/pa/tools/palegends/build_arm_zeus.json",
+      "aim_bone": "bone_root"
+    }
+  ]
+}

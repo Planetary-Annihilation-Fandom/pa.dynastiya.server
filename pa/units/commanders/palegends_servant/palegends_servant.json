@@ -1,0 +1,20 @@
+{
+  "base_spec": "/pa/units/land/assault_bot_adv/assault_bot_adv.json",
+  "display_name": "Слуга Империала",
+  "description": "Слуга, которого призывает Империал. Живёт ограниченное время, намного слабее командира и умеет только драться.",
+  "max_health": 2500,
+  "passive_health_regen": -45,
+  "build_metal_cost": 800,
+  "navigation": {
+    "move_speed": 14
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_NoBuild"
+  ]
+}
