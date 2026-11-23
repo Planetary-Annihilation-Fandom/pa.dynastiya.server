@@ -1,0 +1,82 @@
+{
+  "sources": [
+    {
+      "path": "/pa/units/commanders/imperial_base/imperial_base.json",
+      "source": "base-game",
+      "sha256": "ab91bb98c63b6ff93592d9dcdab8a644dd5e8e30e21d1415876067bb5375b1cd",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/quad_base/quad_base.json",
+      "source": "base-game",
+      "sha256": "c2c22322ed9729268b548a3d4258dd6a7866f5d2c191fbc6f74d7878322caf61",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/raptor_base/raptor_base.json",
+      "source": "base-game",
+      "sha256": "83311194badbd86c4320318cdad0d5d657f88680fbc12ac6f42e7728dc383105",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/tank_base/tank_base.json",
+      "source": "base-game",
+      "sha256": "f14e3f06c48778c46a696f29df2b915ebaf08f9a47ca072189286a93b1d44b7a",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/l_overwatch/l_imperial_base.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "e6a7f93bca1ece0a052f7b6b01df2ac91b1c51b2685237d484bd18d02cea8e6e",
+      "original_base_spec": "/pa/units/commanders/l_base/l_base.json"
+    },
+    {
+      "path": "/pa/units/commanders/l_quad/l_quad_base.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "70548b6f92367e2849bfcad0fa5429a7f331f4bd8d616ae508bde83940e8ba6b",
+      "original_base_spec": "/pa/units/commanders/l_base/l_base.json"
+    },
+    {
+      "path": "/pa/units/commanders/l_raptor/l_raptor_base.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "a90cf208aa71350e9a28dc19601f600c237e1b11fa902fadc296791d51a4f1f0",
+      "original_base_spec": "/pa/units/commanders/l_base/l_base.json"
+    },
+    {
+      "path": "/pa/units/commanders/l_tank/l_tank_base.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "8b779d634bc553441caf4cd7153efc0729fa4bc05b64c29982c68c70100c3a6b",
+      "original_base_spec": "/pa/units/commanders/l_base/l_base.json"
+    },
+    {
+      "path": "/pa/units/commanders/l_cataphract/l_cataphract.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "1f67f336ef9d894398d98cb7570d3e79b2314fc1a322e92211372d305b33ddc3",
+      "original_base_spec": "/pa/units/commanders/l_base/l_base.json"
+    },
+    {
+      "path": "/pa/units/commanders/exiles_blueberry/exiles_blueberry.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "3a53c5c018d48f0fd7696bb7e06745e5b504d27540c0f1dd30b0f424b3d5eb25",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/exiles_brainiac/exiles_brainiac.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "3f62e9c87a9b6a34882dd3bb5152ee718101ee49036a32c7e5ae610489ae7d3b",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/exiles_maxim/exiles_maxim.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "5a9c883aa25fe6bfcf3111b87c906c987a2367d10e18c815489af5465be4ea3e",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    },
+    {
+      "path": "/pa/units/commanders/exiles_taurus/exiles_taurus.json",
+      "source": "com.pa.ferretmaster.commander-merge@1.9",
+      "sha256": "f140668987da1a74b706e72ad822584350687bbbae3451f194d9b8968c333c5d",
+      "original_base_spec": "/pa/units/commanders/base_commander/base_commander.json"
+    }
+  ]
+}
