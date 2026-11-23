@@ -4,25 +4,29 @@
       "name": "Imperial",
       "description": "A resilient commander with strong resource storage and servants.",
       "icon": "/pa/units/commanders/palegends_icons/imperial.png",
-      "superform": "/pa/units/commanders/palegends_imperial/palegends_imperial.json"
+      "superform": "/pa/units/commanders/palegends_imperial/palegends_imperial.json",
+      "combatSuperforms": ["/pa/units/palegends/palegends_uran/palegends_uran.json"]
     },
     "quad": {
       "name": "Quad",
       "description": "A siege commander with radar and long-range tactical missiles.",
       "icon": "/pa/units/commanders/palegends_icons/quad.png",
-      "superform": "/pa/units/commanders/palegends_quad/palegends_quad.json"
+      "superform": "/pa/units/commanders/palegends_quad/palegends_quad.json",
+      "combatSuperforms": ["/pa/units/palegends/palegends_helios/palegends_helios.json"]
     },
     "raptor": {
       "name": "Raptor",
       "description": "A fast commander with radar jamming and a decoy.",
       "icon": "/pa/units/commanders/palegends_icons/raptor.png",
-      "superform": "/pa/units/commanders/palegends_raptor/palegends_raptor.json"
+      "superform": "/pa/units/commanders/palegends_raptor/palegends_raptor.json",
+      "combatSuperforms": ["/pa/units/palegends/palegends_zeus/palegends_zeus.json"]
     },
     "tank": {
       "name": "Tank",
       "description": "A frontline commander with a shield and repair pulse.",
       "icon": "/pa/units/commanders/palegends_icons/tank.png",
-      "superform": "/pa/units/commanders/palegends_tank/palegends_tank.json"
+      "superform": "/pa/units/commanders/palegends_tank/palegends_tank.json",
+      "combatSuperforms": ["/pa/units/palegends/palegends_atlas/palegends_atlas.json", "/pa/units/palegends/palegends_ares/palegends_ares.json"]
     }
   },
   "commanders": {

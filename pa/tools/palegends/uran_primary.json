@@ -7,7 +7,7 @@
     "WL_WaterSurface"
   ],
   "rate_of_fire": 0.8,
-  "max_range": 120,
+  "max_range": 400,
   "yaw_rate": 360,
   "pitch_rate": 360,
   "yaw_range": 180,

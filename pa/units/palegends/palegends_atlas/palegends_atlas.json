@@ -13,6 +13,8 @@
   },
   "unit_types": [
     "UNITTYPE_Custom58",
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
@@ -52,6 +54,42 @@
     {
       "spec_id": "/pa/tools/palegends/build_arm_atlas.json",
       "aim_bone": "bone_root"
+    }
+  ],
+  "model": {
+    "filename": "/pa/units/palegends/palegends_atlas/titan_bot.papa",
+    "animations": {
+      "walk": "/pa/units/land/titan_bot/titan_bot_anim_walk.papa",
+      "idle": "/pa/units/land/titan_bot/titan_bot_anim_idle.papa",
+      "deploy": "/pa/units/land/titan_bot/titan_bot_anim_deploy.papa",
+      "build": "/pa/units/land/titan_bot/titan_bot_anim_build.papa",
+      "walk_stop": "/pa/units/land/titan_bot/titan_bot_anim_walk_stop.papa",
+      "turn_left": "/pa/units/land/titan_bot/titan_bot_anim_left_turn.papa",
+      "turn_right": "/pa/units/land/titan_bot/titan_bot_anim_right_turn.papa",
+      "death": "/pa/units/land/titan_bot/titan_bot_anim_death.papa",
+      "dead": "/pa/units/land/titan_bot/titan_bot_anim_dead.papa",
+      "attack": "/pa/units/land/titan_bot/titan_bot_anim_attack.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
+    "walk_speed": 13
+  },
+  "physics": {
+    "radius": 18.75,
+    "orient_interp_rate": 60.0
+  },
+  "mesh_bounds": [
+    62.5,
+    50.0,
+    81.25
+  ],
+  "selection_icon": {
+    "diameter": 85.0
+  },
+  "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/effects/palegends/superform_sparks.pfx",
+      "bone": "bone_root"
     }
   ]
 }

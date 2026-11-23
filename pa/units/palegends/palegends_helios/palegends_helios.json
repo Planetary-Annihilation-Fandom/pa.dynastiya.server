@@ -3,6 +3,61 @@
   "display_name": "Гелиос",
   "description": "Суперформа Квада. Приняв вооружение нуль-формы, Гелиос превращает свои лучевые установки в ракетные и обрушивает почти бесконечный поток ракет. Сохраняет телепорт и умеет строить орбитальные объекты. Производится орбитальными фабрикаторами.",
   "max_health": 20000,
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_LaserPlatform",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Titan",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Important",
+    "UNITTYPE_Interplanetary"
+  ],
+  "recon": {
+    "observable": {
+      "always_visible": true
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 250
+        },
+        {
+          "layer": "orbital",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 600
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 250
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 500,
+          "uses_energy": true
+        },
+        {
+          "layer": "underwater",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 500,
+          "uses_energy": true
+        }
+      ]
+    }
+  },
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -10,7 +65,8 @@
     "ORDER_Build",
     "ORDER_Reclaim",
     "ORDER_Repair",
-    "ORDER_Assist"
+    "ORDER_Assist",
+    "ORDER_FireSecondaryWeapon"
   ],
   "buildable_types": "FabOrbBuild",
   "tools": [
@@ -37,8 +93,110 @@
       "projectiles_per_fire": 8
     },
     {
+      "spec_id": "/pa/tools/palegends/quad_tactical.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
       "spec_id": "/pa/tools/palegends/build_arm_helios.json",
       "aim_bone": "bone_root"
+    }
+  ],
+  "model": {
+    "filename": "/pa/units/palegends/palegends_helios/titan_orbital.papa",
+    "animations": {
+      "idle": "/pa/units/orbital/titan_orbital/titan_orbital_anim_idle.papa",
+      "death": "/pa/units/orbital/titan_orbital/titan_orbital_anim_death.papa",
+      "dead": "/pa/units/orbital/titan_orbital/titan_orbital_anim_dead.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/titan_orbital_anim_tree.json"
+  },
+  "physics": {
+    "radius": 18.75,
+    "gravity_scalar": 0.001,
+    "air_friction": 0.25
+  },
+  "mesh_bounds": [
+    106.25,
+    106.25,
+    25.0
+  ],
+  "selection_icon": {
+    "diameter": 152.5,
+    "vertical_offset": -10
+  },
+  "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_rotator_top_idle.pfx",
+      "bone": "bone_rotatorTop"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_rotator_bottom_idle.pfx",
+      "bone": "bone_rotatorBottom"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle01"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle02"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle03"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle04"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle05"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle06"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle07"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+      "bone": "socket_muzzle08"
+    },
+    {
+      "type": "enabled",
+      "filename": "/pa/units/orbital/titan_orbital/teleporter_event_horizon.pfx",
+      "bone": "bone_root",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/effects/palegends/superform_sparks.pfx",
+      "bone": "bone_root"
     }
   ]
 }
