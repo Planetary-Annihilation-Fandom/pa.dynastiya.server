@@ -35,6 +35,13 @@ Object.keys(catalogue.commanders).forEach((spec) => {
 });
 Object.entries(catalogue.classes).forEach(([id, item]) => {
   if (!fs.existsSync(asset(server, item.superform))) errors.push(`Missing superform for ${id}: ${item.superform}`);
+  if (!Array.isArray(item.combatSuperforms) || !item.combatSuperforms.length) {
+    errors.push(`Missing combat superforms for ${id}`);
+    return;
+  }
+  item.combatSuperforms.forEach((spec) => {
+    if (!fs.existsSync(asset(server, spec))) errors.push(`Missing combat superform for ${id}: ${spec}`);
+  });
 });
 
 sources.forEach((source) => {

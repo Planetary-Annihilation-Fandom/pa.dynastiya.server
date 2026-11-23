@@ -43,6 +43,8 @@
   },
   "unit_types": [
     "UNITTYPE_Custom58",
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
     "UNITTYPE_Bomber",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
@@ -74,8 +76,64 @@
       ]
     },
     {
+      "spec_id": "/pa/tools/palegends/raptor_illusion.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
       "spec_id": "/pa/tools/palegends/build_arm_zeus.json",
       "aim_bone": "bone_root"
+    }
+  ],
+  "model": {
+    "filename": "/pa/units/palegends/palegends_zeus/titan_air.papa",
+    "animations": {
+      "hover": "/pa/units/air/titan_air/titan_air_anim_hover.papa",
+      "death": "/pa/units/air/titan_air/titan_air_anim_death.papa",
+      "dead": "/pa/units/air/titan_air/titan_air_anim_dead.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/titan_air_anim_tree.json"
+  },
+  "physics": {
+    "radius": 7.5,
+    "gravity_scalar": 1,
+    "push_sideways": false,
+    "allow_pushing": false,
+    "air_friction": 1.0
+  },
+  "mesh_bounds": [
+    67.5,
+    40.0,
+    12.5
+  ],
+  "selection_icon": {
+    "diameter": 75.0
+  },
+  "fx_offsets": [
+    {
+      "type": "moving_forward",
+      "filename": "/pa/units/air/titan_air/titan_air_jets.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/air/titan_air/titan_air_idle.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/effects/palegends/superform_sparks.pfx",
+      "bone": "bone_root"
     }
   ]
 }
